@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/MC-Launcher-Alpha/',
+  base: '/',
   title: 'MCLA',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
