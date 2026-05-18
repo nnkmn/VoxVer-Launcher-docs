@@ -1,0 +1,226 @@
+/* ============================================
+   MCLa VitePress 主题 - 深色蓝紫风
+   ============================================ */
+
+/* 强制深色模式 */
+:root {
+  color-scheme: dark;
+
+  /* ---------- 品牌色（蓝色系，匹配 MCLA logo） ---------- */
+  --vp-c-brand-1:  #0066ff;
+  --vp-c-brand-2:  #3385ff;
+  --vp-c-brand-3:  #66aaff;
+  --vp-c-brand-soft: rgba(0, 102, 255, 0.14);
+
+  /* ---------- 背景色 ---------- */
+  --vp-c-bg:       #0d0d18;
+  --vp-c-bg-soft:  #151525;
+  --vp-c-bg-mute:  #1e1e30;
+  --vp-c-bg-alt:   #0a0a14;
+
+  /* ---------- 文字色 ---------- */
+  --vp-c-text-1:   #e8edf5;
+  --vp-c-text-2:   #a0aec0;
+  --vp-c-text-3:   #718096;
+
+  /* ---------- 边框 ---------- */
+  --vp-c-border:        #2a2a40;
+  --vp-c-border-hard:   #3a3a55;
+  --vp-c-gutter:        #0a0a14;
+
+  /* ---------- 代码块 ---------- */
+  --vp-code-block-bg:   #151525;
+  --vp-code-bg:         #1e1e30;
+
+  /* ---------- 字体（保持可读性，仅标题用装饰字体） ---------- */
+  --vp-font-family-base: 'Inter', 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+  --vp-font-family-mono: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+}
+
+/* 暗色主题根节点 */
+.dark {
+  --vp-c-bg:       #0d0d18;
+  --vp-c-bg-soft:  #151525;
+  --vp-c-bg-mute:  #1e1e30;
+  --vp-c-bg-alt:   #0a0a14;
+}
+
+/* ============================================
+   强制深色显示（覆盖默认亮色）
+   ============================================ */
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--vp-c-bg) !important;
+  color: var(--vp-c-text-1) !important;
+}
+
+/* ============================================
+   导航栏
+   ============================================ */
+.VPNav,
+.VPNavBar {
+  background-color: rgba(13, 13, 24, 0.9) !important;
+  border-bottom: 1px solid var(--vp-c-border) !important;
+  backdrop-filter: blur(12px);
+}
+
+/* ============================================
+   侧边栏
+   ============================================ */
+.VPSidebar {
+  background-color: var(--vp-c-bg-soft) !important;
+  border-right: 1px solid var(--vp-c-border) !important;
+}
+
+/* ============================================
+   主内容区
+   ============================================ */
+.VPContent {
+  background-color: var(--vp-c-bg) !important;
+}
+
+.VPDoc {
+  background-color: var(--vp-c-bg) !important;
+}
+
+/* ============================================
+   Hero 区域
+   ============================================ */
+.VPHero {
+  background: linear-gradient(135deg, #0d0d18 0%, #0f0f25 50%, #0d1528 100%) !important;
+}
+
+.VPHero .name {
+  color: #ffffff !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.VPHero .text {
+  color: var(--vp-c-text-2) !important;
+}
+
+.VPHero .tagline {
+  color: var(--vp-c-text-3) !important;
+}
+
+/* ============================================
+   按钮
+   ============================================ */
+.VPButton.brand {
+  background-color: var(--vp-c-brand-1) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+  font-weight: 600;
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-c-brand-2) !important;
+  border-color: var(--vp-c-brand-2) !important;
+}
+
+.VPButton.alt {
+  background-color: transparent !important;
+  border: 1px solid var(--vp-c-border-hard) !important;
+  color: var(--vp-c-text-1) !important;
+  border-radius: 6px !important;
+}
+
+.VPButton.alt:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* ============================================
+   功能卡片
+   ============================================ */
+.VPFeatures .VPFeature {
+  background-color: var(--vp-c-bg-soft) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 8px !important;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.VPFeatures .VPFeature:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   代码块
+   ============================================ */
+div[class*='language-'] {
+  background-color: var(--vp-code-block-bg) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 6px !important;
+}
+
+/* ============================================
+   表格
+   ============================================ */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-mute) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  color: var(--vp-c-text-1) !important;
+  padding: 10px 16px;
+}
+
+.vp-doc td {
+  border: 1px solid var(--vp-c-border) !important;
+  padding: 8px 16px;
+}
+
+.vp-doc tr:hover td {
+  background-color: var(--vp-c-bg-soft) !important;
+}
+
+/* ============================================
+   链接
+   ============================================ */
+.vp-doc a {
+  color: var(--vp-c-brand-3) !important;
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2) !important;
+  text-decoration: underline;
+}
+
+/* ============================================
+   页脚
+   ============================================ */
+.VPFooter {
+  background-color: var(--vp-c-bg-alt) !important;
+  border-top: 1px solid var(--vp-c-border) !important;
+}
+
+/* ============================================
+   滚动条
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-border-hard);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
