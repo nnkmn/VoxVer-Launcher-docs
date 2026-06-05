@@ -11,7 +11,7 @@ hero:
       link: /guide/
     - theme: alt
       text: GitHub
-      link: https://github.com/nnkmn/MC-Launcher-Alpha
+      link: https://github.com/nnkmn/MC-Launcher-Alpha-
 
 features:
   - icon: "\u26A1"

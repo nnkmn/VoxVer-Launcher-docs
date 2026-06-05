@@ -61,35 +61,37 @@ export default defineConfig({
           },
         },
         sidebar: {
-          '/guide/': [
+          '/': [
             {
-              text: '快速开始',
+              text: '快速导航',
               items: [
-                { text: '简介', link: '/guide/' },
+                { text: '简介', link: '/' },
                 { text: '下载与安装', link: '/guide/download' },
                 { text: '快速启动', link: '/guide/quick-start' },
-              ],
-            },
-            {
-              text: '功能指南',
-              items: [
                 { text: '账户管理', link: '/guide/accounts' },
                 { text: '版本管理', link: '/guide/versions' },
                 { text: 'Mod 管理', link: '/guide/mods' },
                 { text: '实例系统', link: '/guide/instances' },
+                { text: 'Java 设置', link: '/guide/java' },
+                { text: '全局设置', link: '/guide/settings' },
+                { text: '常见问题', link: '/guide/faq' },
               ],
             },
+          ],
+          '/guide/': [
             {
-              text: '配置',
+              text: '快速导航',
               items: [
+                { text: '简介', link: '/guide/' },
+                { text: '下载与安装', link: '/guide/download' },
+                { text: '快速启动', link: '/guide/quick-start' },
+                { text: '账户管理', link: '/guide/accounts' },
+                { text: '版本管理', link: '/guide/versions' },
+                { text: 'Mod 管理', link: '/guide/mods' },
+                { text: '实例系统', link: '/guide/instances' },
                 { text: 'Java 设置', link: '/guide/java' },
                 { text: '全局设置', link: '/guide/settings' },
                 { text: '自定义路径', link: '/guide/custom-path' },
-              ],
-            },
-            {
-              text: '更多',
-              items: [
                 { text: '崩溃监控', link: '/guide/crash' },
                 { text: '常见问题', link: '/guide/faq' },
                 { text: '更新日志', link: '/guide/changelog' },
@@ -148,35 +150,37 @@ export default defineConfig({
           },
         },
         sidebar: {
-          '/en/guide/': [
+          '/en/': [
             {
-              text: 'Getting Started',
+              text: 'Quick Navigation',
               items: [
-                { text: 'Introduction', link: '/en/guide/' },
+                { text: 'Introduction', link: '/en/' },
                 { text: 'Download & Install', link: '/en/guide/download' },
                 { text: 'Quick Start', link: '/en/guide/quick-start' },
-              ],
-            },
-            {
-              text: 'Features',
-              items: [
                 { text: 'Account Management', link: '/en/guide/accounts' },
                 { text: 'Version Management', link: '/en/guide/versions' },
                 { text: 'Mod Management', link: '/en/guide/mods' },
                 { text: 'Instance System', link: '/en/guide/instances' },
+                { text: 'Java Settings', link: '/en/guide/java' },
+                { text: 'Global Settings', link: '/en/guide/settings' },
+                { text: 'FAQ', link: '/en/guide/faq' },
               ],
             },
+          ],
+          '/en/guide/': [
             {
-              text: 'Configuration',
+              text: 'Quick Navigation',
               items: [
+                { text: 'Introduction', link: '/en/guide/' },
+                { text: 'Download & Install', link: '/en/guide/download' },
+                { text: 'Quick Start', link: '/en/guide/quick-start' },
+                { text: 'Account Management', link: '/en/guide/accounts' },
+                { text: 'Version Management', link: '/en/guide/versions' },
+                { text: 'Mod Management', link: '/en/guide/mods' },
+                { text: 'Instance System', link: '/en/guide/instances' },
                 { text: 'Java Settings', link: '/en/guide/java' },
                 { text: 'Global Settings', link: '/en/guide/settings' },
                 { text: 'Custom Paths', link: '/en/guide/custom-path' },
-              ],
-            },
-            {
-              text: 'More',
-              items: [
                 { text: 'Crash Monitor', link: '/en/guide/crash' },
                 { text: 'FAQ', link: '/en/guide/faq' },
                 { text: 'Changelog', link: '/en/guide/changelog' },
@@ -193,5 +197,47 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nnkmn/MC-Launcher-Alpha' },
     ],
+    sidebar: {
+      '/': [
+        {
+          text: '快速导航',
+          items: [
+            { text: '简介', link: '/' },
+            { text: '下载与安装', link: '/guide/download' },
+            { text: '快速启动', link: '/guide/quick-start' },
+            { text: '账户管理', link: '/guide/accounts' },
+            { text: '版本管理', link: '/guide/versions' },
+            { text: 'Mod 管理', link: '/guide/mods' },
+            { text: '实例系统', link: '/guide/instances' },
+            { text: 'Java 设置', link: '/guide/java' },
+            { text: '全局设置', link: '/guide/settings' },
+            { text: '自定义路径', link: '/guide/custom-path' },
+            { text: '崩溃监控', link: '/guide/crash' },
+            { text: '常见问题', link: '/guide/faq' },
+            { text: '更新日志', link: '/guide/changelog' },
+          ],
+        },
+      ],
+      '/guide/': [
+        {
+          text: '快速导航',
+          items: [
+            { text: '简介', link: '/guide/' },
+            { text: '下载与安装', link: '/guide/download' },
+            { text: '快速启动', link: '/guide/quick-start' },
+            { text: '账户管理', link: '/guide/accounts' },
+            { text: '版本管理', link: '/guide/versions' },
+            { text: 'Mod 管理', link: '/guide/mods' },
+            { text: '实例系统', link: '/guide/instances' },
+            { text: 'Java 设置', link: '/guide/java' },
+            { text: '全局设置', link: '/guide/settings' },
+            { text: '自定义路径', link: '/guide/custom-path' },
+            { text: '崩溃监控', link: '/guide/crash' },
+            { text: '常见问题', link: '/guide/faq' },
+            { text: '更新日志', link: '/guide/changelog' },
+          ],
+        },
+      ],
+    },
   },
 })
