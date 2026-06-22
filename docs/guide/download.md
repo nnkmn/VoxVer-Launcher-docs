@@ -10,7 +10,7 @@ title: "下载与安装"
 
 MC Launcher Alpha 的正式发布版本托管在 GitHub Releases 上。
 
-前往 [GitHub Releases](https://github.com/nnkmn/MC-Launcher-Alpha/releases) 页面，找到最新版本，下载对应的安装包。
+前往 [GitHub Releases](https://github.com/nnkmn/MC-Launcher-Alpha-/releases) 页面，找到最新版本，下载对应的安装包。
 
 | 文件名 | 说明 | 适用平台 |
 |--------|------|---------|
@@ -59,7 +59,7 @@ MC Launcher Alpha 的正式发布版本托管在 GitHub Releases 上。
 
 ```bash
 # 克隆仓库
-git clone https://github.com/nnkmn/MC-Launcher-Alpha.git
+git clone https://github.com/nnkmn/MC-Launcher-Alpha-.git
 cd MC Launcher Alpha
 
 # 安装项目依赖
