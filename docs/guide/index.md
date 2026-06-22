@@ -1,14 +1,14 @@
 ---
-title: "MC Launcher Alpha 使用指南"
+title: "VoxVer Launcher 使用指南"
 ---
 
-# MC Launcher Alpha 使用指南
+# VoxVer Launcher 使用指南
 
-欢迎使用 **MC Launcher Alpha（Minecraft Launcher Advanced）** 使用指南。本指南将帮助你从零开始，快速掌握 MC Launcher Alpha 启动器的全部功能。
+欢迎使用 **VoxVer Launcher** 使用指南。本指南将帮助你从零开始，快速掌握 VoxVer Launcher 启动器的全部功能。
 
-## 关于 MC Launcher Alpha
+## 关于 VoxVer Launcher
 
-MC Launcher Alpha 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打造的现代化 Minecraft 启动器，致力于为玩家提供简洁、高效、功能丰富的游戏启动体验。无论你是正版玩家还是离线玩家，MC Launcher Alpha 都能满足你的需求。
+VoxVer Launcher 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打造的现代化 Minecraft 启动器，致力于为玩家提供简洁、高效、功能丰富的游戏启动体验。无论你是正版玩家还是离线玩家，VoxVer Launcher 都能满足你的需求。
 
 **核心特性：**
 
@@ -17,8 +17,12 @@ MC Launcher Alpha 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打
 - Fabric / Forge / NeoForge / Quilt 四大 ModLoader 一键安装
 - 接入 CurseForge + Modrinth 双源，Mod 搜索、下载、管理一站式操作
 - 实例隔离系统，多环境互不干扰
+- P2P 实例分享，通过 6 位分享码一键分享
+- 主题自定义，色盘编辑器打造个性化界面
+- 全局快捷键，快速启动游戏
 - 内置崩溃监控与日志分析
-- 深色主题 + 像素风 UI 可选
+- 深色主题 + 像素风 UI
+- 国际化支持，简体中文和英文
 
 ## 快速导航
 
@@ -39,7 +43,7 @@ MC Launcher Alpha 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打
 
 ## 系统要求
 
-在安装 MC Launcher Alpha 之前，请确认你的系统满足以下最低要求：
+在安装 VoxVer Launcher 之前，请确认你的系统满足以下最低要求：
 
 | 项目 | 最低要求 | 推荐配置 |
 |------|---------|---------|
@@ -51,7 +55,7 @@ MC Launcher Alpha 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打
 | Java | 启动器可自动检测系统 Java | Java 17+（适配 1.18+ 版本） |
 
 ::: tip 提示
-MC Launcher Alpha 启动器本身对硬件要求较低，但运行 Minecraft 游戏需要更高的硬件配置，具体取决于你游玩的游戏版本和安装的 Mod 数量。
+VoxVer Launcher 启动器本身对硬件要求较低，但运行 Minecraft 游戏需要更高的硬件配置，具体取决于你游玩的游戏版本和安装的 Mod 数量。
 :::
 
 ::: warning 注意
@@ -60,7 +64,7 @@ MC Launcher Alpha 启动器本身对硬件要求较低，但运行 Minecraft 游
 
 ## 遇到问题？
 
-如果你在使用 MC Launcher Alpha 的过程中遇到任何问题，可以通过以下方式获取帮助：
+如果你在使用 VoxVer Launcher 的过程中遇到任何问题，可以通过以下方式获取帮助：
 
 1. **查阅文档** -- 先浏览本指南中的 [常见问题](/guide/faq) 和 [崩溃监控](/guide/crash) 章节，大部分问题都能在这里找到答案。
 2. **搜索 Issues** -- 前往 [GitHub Issues](https://github.com/nnkmn/MC-Launcher-Alpha/issues) 搜索是否已有相同问题的讨论。

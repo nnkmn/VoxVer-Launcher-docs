@@ -1,36 +1,67 @@
 ---
-title: "MC Launcher Alpha User Guide"
+title: "VoxVer Launcher User Guide"
 ---
 
-# MC Launcher Alpha User Guide
+# VoxVer Launcher User Guide
 
-Welcome to the **MC Launcher Alpha (Minecraft Launcher Advanced)** documentation.
+Welcome to the **VoxVer Launcher** documentation.
 
-MC Launcher Alpha is a modern Minecraft launcher built with Electron + Vue 3 + TypeScript, featuring Microsoft account login, multi-version management, mod downloading and management, instance isolation, and more.
+VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + TypeScript**, featuring Microsoft account login, multi-version management, mod downloading and management, instance isolation, P2P sharing, theme customization, global hotkeys, and more.
+
+## Core Features
+
+- Microsoft authentication (Device Code Flow) + offline mode
+- Complete version management (Release / Snapshot / Old Alpha / Old Beta / April Fools)
+- Fabric / Forge / NeoForge / Quilt ModLoader one-click installation
+- CurseForge + Modrinth dual-source mod search, download, and management
+- Instance isolation system for multiple environments
+- P2P instance sharing via 6-digit code
+- Theme customization with color palette editor
+- Global hotkeys for quick game launch
+- Built-in crash monitoring and log analysis
+- Dark theme + pixel art UI
+- Internationalization (Chinese and English)
 
 ## Quick Navigation
 
-| Document | Description |
-|----------|-------------|
-| [Download & Install](/en/guide/download) | Download, install, and first launch |
-| [Account Management](/en/guide/accounts) | Microsoft login, offline mode, multi-account switching |
-| [Version Management](/en/guide/versions) | Version installation, isolation, snapshots & old versions |
-| [Mod Management](/en/guide/mods) | Search, download, enable/disable, config editing |
-| [Instance System](/en/guide/instances) | Create, import, export, independent management |
+| Document | Description | Target Audience |
+|----------|-------------|----------------|
+| [Download & Install](/en/guide/download) | Download, install, and first launch | All new users |
+| [Quick Start](/en/guide/quick-start) | Five steps to first game launch | Users wanting to get started quickly |
+| [Account Management](/en/guide/accounts) | Microsoft login, offline mode, multi-account | Users managing multiple accounts |
+| [Version Management](/en/guide/versions) | Version install, isolation, ModLoader | Users managing multiple versions |
+| [Mod Management](/en/guide/mods) | Search, download, enable/disable, config | Mod users |
+| [Instance System](/en/guide/instances) | Create, import, export, independent env | Users needing environment isolation |
+| [Java Settings](/en/guide/java) | Auto-detect, manual config, memory tuning | Users with Java issues |
+| [Global Settings](/en/guide/settings) | General, appearance, advanced settings | Users wanting personalization |
+| [Custom Game Path](/en/guide/custom-path) | Game directory, multi-launcher coexistence | Users needing custom storage |
+| [Crash Monitor](/en/guide/crash) | Crash reports, common causes | Users experiencing crashes |
+| [FAQ](/en/guide/faq) | Launch, account, mod questions | Users with any issues |
+| [Changelog](/en/guide/changelog) | Version changes & roadmap | Users following project progress |
 
 ## System Requirements
 
-| Item | Minimum Requirement |
-|------|-------------------|
-| Operating System | Windows 10 64-bit or later |
-| CPU | x64 architecture |
-| Memory | 8 GB or more recommended (game requirements not included) |
-| Network | Internet connection required for first use (downloading game versions, mods, etc.) |
-| Java | Auto-detected by the launcher, or can be specified manually |
+| Item | Minimum Requirement | Recommended |
+|------|-------------------|-------------|
+| Operating System | Windows 10 64-bit | Windows 10/11 64-bit |
+| CPU | x64 architecture | x64 multi-core |
+| Memory | 8 GB or more | 16 GB or more |
+| Disk Space | 500 MB (launcher only) | SSD, 10 GB+ (with game files) |
+| Network | Required for first use | Stable broadband |
+| Java | Auto-detected by launcher | Java 17+ (for 1.18+) |
 
-> macOS and Linux versions are currently planned.
+::: tip Note
+VoxVer Launcher itself has low hardware requirements, but running Minecraft requires higher specs depending on game version and mod count.
+:::
+
+::: warning Warning
+Current version only supports **Windows**. macOS and Linux versions are in development.
+:::
 
 ## Having Trouble?
 
-- Check the [FAQ](/en/guide/faq)
-- Submit a [GitHub Issue](https://github.com/nnkmn/MC-Launcher-Alpha/issues)
+If you encounter any issues while using VoxVer Launcher:
+
+1. **Check the documentation** -- Browse the [FAQ](/en/guide/faq) and [Crash Monitor](/en/guide/crash) sections first.
+2. **Search Issues** -- Check [GitHub Issues](https://github.com/nnkmn/MC-Launcher-Alpha/issues) for similar problems.
+3. **Submit Issue** -- If nothing helps, create a new GitHub Issue with crash logs and system info for faster debugging.

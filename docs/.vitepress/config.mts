@@ -2,13 +2,13 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/',
-  title: 'MCLA',
+  title: 'VoxVer Launcher',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
     ['meta', { name: 'theme-color', content: '#1a1a2e' }],
   ],
-  description: 'MCLA - Minecraft Launcher Advanced，一个现代化的 Minecraft 启动器',
-  titleTemplate: ':title - MCLA',
+  description: 'VoxVer Launcher - 一个现代化的 Minecraft 启动器，基于 Electron + Vue 3 + TypeScript',
+  titleTemplate: ':title - VoxVer',
   lastUpdated: true,
 
   locales: {
@@ -38,7 +38,7 @@ export default defineConfig({
           pattern: 'https://github.com/nnkmn/MC-Launcher-Alpha/edit/main/docs/:path',
         },
         footer: {
-          message: 'MCLA 基于 MIT 协议开源',
+          message: 'VoxVer Launcher 基于 MIT 协议开源',
           copyright: 'Copyright © 2024-2026 nnkmn (EccenTri)',
         },
         search: {
@@ -127,7 +127,7 @@ export default defineConfig({
           pattern: 'https://github.com/nnkmn/MC-Launcher-Alpha/edit/main/docs/:path',
         },
         footer: {
-          message: 'MCLA is open source under the MIT License',
+          message: 'VoxVer Launcher is open source under the MIT License',
           copyright: 'Copyright © 2024-2026 nnkmn (EccenTri)',
         },
         search: {
