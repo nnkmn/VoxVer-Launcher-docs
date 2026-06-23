@@ -1,8 +1,8 @@
-# MC Launcher Alpha (MCLA)
+# VoxVer Launcher
 
 **Minecraft Launcher Advanced** — 一个现代化的 Minecraft 启动器
 
-[中文文档](https://nnkmn.github.io/MC-Launcher-Alpha/) | [English Docs](https://nnkmn.github.io/MC-Launcher-Alpha/en/)
+[中文文档](https://nnkmn.github.io/VoxVer-Launcher-docs/) | [English Docs](https://nnkmn.github.io/VoxVer-Launcher-docs/en/)
 
 ## ✨ 特性
 
@@ -12,6 +12,9 @@
 - 🔧 **ModLoader 安装** — Fabric / Forge / NeoForge / Quilt 一键安装
 - 🎮 **Mod 管理** — CurseForge + Modrinth 双源，搜索/下载/启用禁用/配置编辑
 - 🗂️ **实例系统** — 创建/导入/导出游戏实例，独立管理 Mod 和配置
+- 🔗 **P2P 实例分享** — WebRTC 直连技术，6 位分享码一键分享
+- 🎨 **主题自定义** — 色盘编辑器，自定义主题配色方案
+- ⌨️ **全局快捷键** — 自定义全局快捷键，快速启动游戏
 - 💥 **崩溃监控** — 游戏崩溃自动捕获日志，JVM 错误分析
 
 ## 🛠️ 技术栈
@@ -51,7 +54,7 @@ npm run docs:preview
 
 ## 📄 协议
 
-本项目基于 [MIT 协议](https://github.com/nnkmn/MC-Launcher-Alpha/blob/main/LICENSE) 开源。
+本项目基于 [MIT 协议](https://github.com/nnkmn/VoxVer-Launcher/blob/main/LICENSE) 开源。
 
 > Minecraft 是 Microsoft Corporation 的商标。本项目与 Mojang Studios 或 Microsoft 无关。
 
