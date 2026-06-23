@@ -1,10 +1,10 @@
-﻿---
+---
 title: "Global Settings"
 ---
 
 # Global Settings
 
-MC Launcher Alpha provides a variety of global configuration options to meet your personalization needs.
+VoxVer Launcher provides a variety of global configuration options to meet your personalization needs.
 
 ## General Settings
 

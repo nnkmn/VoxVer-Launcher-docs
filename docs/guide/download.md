@@ -4,18 +4,18 @@ title: "下载与安装"
 
 # 下载与安装
 
-本章介绍如何获取 MC Launcher Alpha 启动器并完成安装，同时也提供从源码构建的方法供开发者参考。
+本章介绍如何获取 VoxVer Launcher 启动器并完成安装，同时也提供从源码构建的方法供开发者参考。
 
 ## 下载
 
-MC Launcher Alpha 的正式发布版本托管在 GitHub Releases 上。
+VoxVer Launcher 的正式发布版本托管在 GitHub Releases 上。
 
-前往 [GitHub Releases](https://github.com/nnkmn/MC-Launcher-Alpha-/releases) 页面，找到最新版本，下载对应的安装包。
+前往 [GitHub Releases](https://github.com/nnkmn/VoxVer-Launcher/releases) 页面，找到最新版本，下载对应的安装包。
 
 | 文件名 | 说明 | 适用平台 |
 |--------|------|---------|
-| `MC Launcher Alpha Setup x.x.x.exe` | NSIS 安装程序（推荐） | Windows |
-| `MC Launcher Alpha x.x.x.zip` | 便携版压缩包（免安装） | Windows |
+| `VoxVer Launcher Setup x.x.x.exe` | NSIS 安装程序（推荐） | Windows |
+| `VoxVer Launcher x.x.x.zip` | 便携版压缩包（免安装） | Windows |
 
 ::: tip 推荐
 普通用户建议下载 **NSIS 安装程序**，安装后会自动创建桌面快捷方式和开始菜单项，后续更新也更方便。
@@ -25,19 +25,19 @@ MC Launcher Alpha 的正式发布版本托管在 GitHub Releases 上。
 
 ### 使用安装程序
 
-1. 下载 `MC Launcher Alpha Setup x.x.x.exe` 安装包
+1. 下载 `VoxVer Launcher Setup x.x.x.exe` 安装包
 2. 双击运行安装程序
 3. 如果出现 Windows SmartScreen 提示，点击「更多信息」->「仍要运行」
-4. 按照安装向导提示选择安装路径（默认路径为 `C:\Users\<用户名>\AppData\Local\Programs\MC Launcher Alpha`）
+4. 按照安装向导提示选择安装路径（默认路径为 `C:\Users\<用户名>\AppData\Local\Programs\VoxVer Launcher`）
 5. 选择是否创建桌面快捷方式
 6. 点击「安装」，等待安装完成
-7. 安装完成后，MC Launcher Alpha 会自动启动
+7. 安装完成后，VoxVer Launcher 会自动启动
 
 ### 使用便携版
 
-1. 下载 `MC Launcher Alpha x.x.x.zip` 压缩包
+1. 下载 `VoxVer Launcher x.x.x.zip` 压缩包
 2. 解压到任意目录（建议路径中不包含中文或特殊字符）
-3. 双击 `MC Launcher Alpha.exe` 即可运行
+3. 双击 `VoxVer Launcher.exe` 即可运行
 
 ::: warning 注意
 便携版不会自动创建快捷方式，也不会写入注册表。更新时需要手动下载新版本并替换文件。
@@ -45,7 +45,7 @@ MC Launcher Alpha 的正式发布版本托管在 GitHub Releases 上。
 
 ## 从源码构建
 
-如果你是开发者，或者希望体验最新的开发版本，可以从源码构建 MC Launcher Alpha。
+如果你是开发者，或者希望体验最新的开发版本，可以从源码构建 VoxVer Launcher。
 
 ### 环境准备
 
@@ -59,8 +59,8 @@ MC Launcher Alpha 的正式发布版本托管在 GitHub Releases 上。
 
 ```bash
 # 克隆仓库
-git clone https://github.com/nnkmn/MC-Launcher-Alpha-.git
-cd MC Launcher Alpha
+git clone https://github.com/nnkmn/VoxVer-Launcher.git
+cd VoxVer-Launcher
 
 # 安装项目依赖
 npm install
@@ -86,7 +86,7 @@ npm run build:win
 
 ## 首次启动检查清单
 
-完成安装后首次启动 MC Launcher Alpha，建议按以下顺序进行检查和配置，确保启动器能够正常工作：
+完成安装后首次启动 VoxVer Launcher，建议按以下顺序进行检查和配置，确保启动器能够正常工作：
 
 | 步骤 | 操作 | 说明 |
 |------|------|------|

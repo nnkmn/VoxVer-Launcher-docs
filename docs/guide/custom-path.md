@@ -4,11 +4,11 @@ title: "自定义游戏路径"
 
 # 自定义游戏路径
 
-MC Launcher Alpha 支持自定义 `.minecraft` 游戏目录的存储路径。本章将介绍如何设置自定义路径、启用版本隔离、实现多启动器共存以及迁移已有的游戏数据。
+VoxVer Launcher 支持自定义 `.minecraft` 游戏目录的存储路径。本章将介绍如何设置自定义路径、启用版本隔离、实现多启动器共存以及迁移已有的游戏数据。
 
 ## 设置自定义路径
 
-默认情况下，MC Launcher Alpha 将游戏文件存储在系统用户目录下的 `.minecraft` 文件夹中。你可以将其更改为任意位置，例如独立的磁盘或分区。
+默认情况下，VoxVer Launcher 将游戏文件存储在系统用户目录下的 `.minecraft` 文件夹中。你可以将其更改为任意位置，例如独立的磁盘或分区。
 
 ### 设置步骤
 
@@ -17,14 +17,14 @@ MC Launcher Alpha 支持自定义 `.minecraft` 游戏目录的存储路径。本
 3. 点击 **「浏览」** 按钮
 4. 在文件夹选择器中选择目标目录（可以选择已有目录或新建目录）
 5. 点击「保存」
-6. **重启 MC Launcher Alpha** 使设置生效
+6. **重启 VoxVer Launcher** 使设置生效
 
 ### 路径格式
 
 | 路径类型 | 示例 | 说明 |
 |---------|------|------|
 | 绝对路径 | `D:\Games\.minecraft` | 推荐使用，明确指向目标位置 |
-| 相对路径 | `./minecraft` | 相对于 MC Launcher Alpha 安装目录 |
+| 相对路径 | `./minecraft` | 相对于 VoxVer Launcher 安装目录 |
 
 ::: warning 注意
 - 路径中 **不应包含中文、空格或特殊字符**，否则可能导致游戏文件下载或启动失败。
@@ -74,7 +74,7 @@ MC Launcher Alpha 支持自定义 `.minecraft` 游戏目录的存储路径。本
 
 ### 与 HMCL / PCL2 共存建议
 
-1. **为 MC Launcher Alpha 设置独立的游戏目录**（如 `D:\Games\MC Launcher Alpha\.minecraft`）
+1. **为 VoxVer Launcher 设置独立的游戏目录**（如 `D:\Games\VoxVer Launcher\.minecraft`）
 2. 其他启动器保持各自的游戏目录不变
 3. 如果必须共用目录，确保所有启动器都启用版本隔离
 4. 避免多个启动器同时运行，防止文件锁定冲突
@@ -86,31 +86,31 @@ MC Launcher Alpha 支持自定义 `.minecraft` 游戏目录的存储路径。本
 
 ## 迁移已有游戏数据
 
-如果你之前使用其他启动器（如官方启动器、HMCL、PCL2）已经下载了游戏文件和存档，可以通过以下方式迁移到 MC Launcher Alpha。
+如果你之前使用其他启动器（如官方启动器、HMCL、PCL2）已经下载了游戏文件和存档，可以通过以下方式迁移到 VoxVer Launcher。
 
 ### 方式一：直接指定游戏目录
 
 1. 找到原有启动器的游戏目录位置（通常为 `~/.minecraft`）
-2. 在 MC Launcher Alpha 的「设置」中将游戏目录指向该路径
-3. 重启 MC Launcher Alpha
-4. MC Launcher Alpha 会自动识别已有的游戏版本和存档
+2. 在 VoxVer Launcher 的「设置」中将游戏目录指向该路径
+3. 重启 VoxVer Launcher
+4. VoxVer Launcher 会自动识别已有的游戏版本和存档
 
 ### 方式二：通过实例导入
 
 1. 进入 **实例** 页面
 2. 点击 **「导入」** 按钮
 3. 选择原有的 `.minecraft` 目录
-4. MC Launcher Alpha 会自动扫描并创建对应的实例
+4. VoxVer Launcher 会自动扫描并创建对应的实例
 5. 导入完成后，原有的游戏文件保持不变
 
 ### 迁移注意事项
 
 | 项目 | 说明 |
 |------|------|
-| 游戏版本 | MC Launcher Alpha 会自动识别已安装的游戏版本 |
+| 游戏版本 | VoxVer Launcher 会自动识别已安装的游戏版本 |
 | Mod 文件 | 如果启用了版本隔离，Mod 会随版本一起迁移 |
-| 存档文件 | 存档会保留在原位置，MC Launcher Alpha 可以直接读取 |
-| 启动器配置 | 其他启动器的配置不会迁移，需要在 MC Launcher Alpha 中重新设置 |
+| 存档文件 | 存档会保留在原位置，VoxVer Launcher 可以直接读取 |
+| 启动器配置 | 其他启动器的配置不会迁移，需要在 VoxVer Launcher 中重新设置 |
 | ModLoader | 已安装的 ModLoader 会被自动识别 |
 
 ::: tip 提示

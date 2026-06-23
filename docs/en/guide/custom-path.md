@@ -1,10 +1,10 @@
-﻿---
+---
 title: "Custom Game Path"
 ---
 
 # Custom Game Path
 
-MC Launcher Alpha supports customizing the `.minecraft` directory path, which is useful for multi-launcher coexistence or disk space management.
+VoxVer Launcher supports customizing the `.minecraft` directory path, which is useful for multi-launcher coexistence or disk space management.
 
 ## Setup Custom Path
 
@@ -12,7 +12,7 @@ MC Launcher Alpha supports customizing the `.minecraft` directory path, which is
 2. Find the "Game Directory" setting
 3. Click "Browse" and select the target folder
 4. Save settings
-5. **Restart MC Launcher Alpha** for changes to take effect
+5. **Restart VoxVer Launcher** for changes to take effect
 
 > The custom path can be an absolute path (e.g., `D:\Games\.minecraft`) or a relative path.
 
@@ -26,13 +26,13 @@ Instances created on the **Instances** page have version isolation enabled by de
 
 If you are using other launchers at the same time (such as HMCL, PCL2), it is recommended to:
 
-- Set an independent game directory for MC Launcher Alpha
+- Set an independent game directory for VoxVer Launcher
 - Or enable version isolation in each launcher
 - Avoid interference between mods and configuration files
 
 ## Migrate Existing Game Data
 
-Import an existing `.minecraft` directory as an MC Launcher Alpha instance:
+Import an existing `.minecraft` directory as an VoxVer Launcher instance:
 
 1. Go to the **Instances** page
 2. Click "Import"

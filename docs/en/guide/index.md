@@ -63,5 +63,5 @@ Current version only supports **Windows**. macOS and Linux versions are in devel
 If you encounter any issues while using VoxVer Launcher:
 
 1. **Check the documentation** -- Browse the [FAQ](/en/guide/faq) and [Crash Monitor](/en/guide/crash) sections first.
-2. **Search Issues** -- Check [GitHub Issues](https://github.com/nnkmn/MC-Launcher-Alpha/issues) for similar problems.
+2. **Search Issues** -- Check [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues) for similar problems.
 3. **Submit Issue** -- If nothing helps, create a new GitHub Issue with crash logs and system info for faster debugging.

@@ -1,14 +1,14 @@
-﻿---
+---
 title: "Version Management"
 ---
 
 # Version Management
 
-MC Launcher Alpha supports full Minecraft version management, including releases, snapshots, old versions, and April Fools versions.
+VoxVer Launcher supports full Minecraft version management, including releases, snapshots, old versions, and April Fools versions.
 
 ## Version List
 
-Go to the **Versions** page and click "Refresh Version List". MC Launcher Alpha will fetch the latest version list from the BMCLAPI mirror.
+Go to the **Versions** page and click "Refresh Version List". VoxVer Launcher will fetch the latest version list from the BMCLAPI mirror.
 
 ## Install Version
 
@@ -19,7 +19,7 @@ Go to the **Versions** page and click "Refresh Version List". MC Launcher Alpha 
 
 ## Version Isolation
 
-MC Launcher Alpha supports version isolation. Each version has its own independent `.minecraft` directory, so mods and configurations do not interfere with each other.
+VoxVer Launcher supports version isolation. Each version has its own independent `.minecraft` directory, so mods and configurations do not interfere with each other.
 
 You can create independent instances for different versions on the **Instances** page.
 

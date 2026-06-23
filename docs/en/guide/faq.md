@@ -1,4 +1,4 @@
-﻿---
+---
 title: "FAQ"
 ---
 
@@ -47,9 +47,9 @@ Go to **Settings** to switch the download source, or check your network connecti
 
 By default, in `.minecraft/saves/`. If version isolation or a custom path is enabled, they are in the corresponding instance directory.
 
-### How to completely uninstall MC Launcher Alpha?
+### How to completely uninstall VoxVer Launcher?
 
-1. Uninstall MC Launcher Alpha from the Control Panel
+1. Uninstall VoxVer Launcher from the Control Panel
 2. Delete the game directory (default `.minecraft`)
 3. Delete the configuration directory (optional)
 

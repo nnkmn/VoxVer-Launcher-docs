@@ -1,10 +1,10 @@
-﻿---
+---
 title: "Mod Management"
 ---
 
 # Mod Management
 
-MC Launcher Alpha integrates CurseForge + Modrinth dual sources, supporting one-stop mod searching, downloading, and management.
+VoxVer Launcher integrates CurseForge + Modrinth dual sources, supporting one-stop mod searching, downloading, and management.
 
 ## Search & Download
 

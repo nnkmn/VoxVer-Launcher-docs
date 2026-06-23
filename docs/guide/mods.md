@@ -4,11 +4,11 @@ title: "Mod 管理"
 
 # Mod 管理
 
-MC Launcher Alpha 内置了强大的 Mod 管理功能，接入 **CurseForge** 和 **Modrinth** 两大 Mod 仓库，支持搜索、下载、启用/禁用、配置编辑和更新检测等一站式操作。本章将详细介绍 Mod 管理的各个方面。
+VoxVer Launcher 内置了强大的 Mod 管理功能，接入 **CurseForge** 和 **Modrinth** 两大 Mod 仓库，支持搜索、下载、启用/禁用、配置编辑和更新检测等一站式操作。本章将详细介绍 Mod 管理的各个方面。
 
 ## 搜索与下载
 
-MC Launcher Alpha 支持从 CurseForge 和 Modrinth 双源搜索和下载 Mod，覆盖绝大多数主流 Mod。
+VoxVer Launcher 支持从 CurseForge 和 Modrinth 双源搜索和下载 Mod，覆盖绝大多数主流 Mod。
 
 ### 搜索步骤
 
@@ -44,7 +44,7 @@ MC Launcher Alpha 支持从 CurseForge 和 Modrinth 双源搜索和下载 Mod，
 
 ## ModLoader 支持
 
-MC Launcher Alpha 支持以下 ModLoader，不同 ModLoader 对应不同的 Mod 生态：
+VoxVer Launcher 支持以下 ModLoader，不同 ModLoader 对应不同的 Mod 生态：
 
 | ModLoader | Mod 生态 | 仓库来源 | 说明 |
 |-----------|---------|---------|------|
@@ -88,4 +88,50 @@ MC Launcher Alpha 支持以下 ModLoader，不同 ModLoader 对应不同的 Mod 
 
 ### Mod 配置文件在哪里？
 
-Mod 配置文件通常位于实例目录下的 `config/` 文件夹中。你也可以通过 MC Launcher Alpha 的内置配置编辑器直接编辑，无需手动查找文件。
+Mod 配置文件通常位于实例目录下的 `config/` 文件夹中。你也可以通过 VoxVer Launcher 的内置配置编辑器直接编辑，无需手动查找文件。
+
+## Mod 自动更新
+
+VoxVer Launcher 内置 **Mod 自动更新检测** 功能，基于 **Modrinth 的 SHA1 哈希** 批量比对已安装的 Mod 与上游版本，自动发现有可用更新的 Mod。
+
+### 检测原理
+
+```
+扫描本地 Mod 文件
+    |
+    v
+计算 SHA1 哈希值
+    |
+    v
+调用 Modrinth API 批量查询
+    |
+    v
+哈希匹配 → 发现新版本
+    |
+    v
+在 Mod 列表中标记「有更新」
+```
+
+### 使用步骤
+
+1. 进入 **实例详情** 页面
+2. 点击 **「检查更新」** 按钮
+3. 启动器会自动扫描本地所有 Mod 文件并计算 SHA1 哈希
+4. 与 Modrinth 上的版本进行比对
+5. 列表中可更新的 Mod 会显示更新提示
+6. 选择要更新的 Mod，点击 **「一键更新」**
+7. 启动器会流式下载新版本并替换旧文件
+
+### 更新策略
+
+| 策略 | 说明 |
+|------|------|
+| 仅显示主版本更新 | 仅在主版本号变化时提示更新（如 1.0.0 → 2.0.0） |
+| 显示所有更新 | 包括补丁版本（推荐） |
+| 手动选择 | 由用户自行决定是否更新每个 Mod |
+
+::: tip 提示
+- 自动更新功能仅适用于从 Modrinth 下载的 Mod。
+- 部分 Mod 可能有版本兼容性要求，更新前请确认新版本与你的游戏版本匹配。
+- 更新过程中游戏需要关闭，更新完成后重新启动游戏即可生效。
+:::

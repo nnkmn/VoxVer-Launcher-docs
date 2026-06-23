@@ -4,7 +4,7 @@ title: "Crash Monitor"
 
 # Crash Monitor
 
-MC Launcher Alpha has a built-in crash monitoring system that automatically captures logs and analyzes them when the game exits unexpectedly.
+VoxVer Launcher has a built-in crash monitoring system that automatically captures logs and analyzes them when the game exits unexpectedly.
 
 ## View Crash Reports
 
@@ -39,6 +39,6 @@ Each crash report includes:
 
 If you cannot resolve the issue on your own:
 
-1. Export the crash report from MC Launcher Alpha
-2. Go to [GitHub Issues](https://github.com/nnkmn/MC-Launcher-Alpha/issues) to submit the issue
+1. Export the crash report from VoxVer Launcher
+2. Go to [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues) to submit the issue
 3. Attach the crash report and log files

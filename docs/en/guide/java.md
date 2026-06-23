@@ -1,14 +1,14 @@
-﻿---
+---
 title: "Java Settings"
 ---
 
 # Java Settings
 
-MC Launcher Alpha supports auto-detecting system Java installations, as well as manually specifying a Java path.
+VoxVer Launcher supports auto-detecting system Java installations, as well as manually specifying a Java path.
 
 ## Auto-Detection
 
-When MC Launcher Alpha is launched for the first time, it automatically scans for installed Java versions on your system.
+When VoxVer Launcher is launched for the first time, it automatically scans for installed Java versions on your system.
 
 Detection results are displayed on the **Settings** page.
 

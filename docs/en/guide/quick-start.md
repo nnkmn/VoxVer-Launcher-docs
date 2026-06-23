@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Quick Start"
 ---
 
@@ -9,7 +9,7 @@ This guide walks you through launching the game for the first time.
 ## Step Overview
 
 ```
-Install MC Launcher Alpha
+Install VoxVer Launcher
   -> Add Account (Microsoft Login / Offline Mode)
   -> Install Game Version
   -> Configure Java (optional, auto-detection supported)
@@ -18,7 +18,7 @@ Install MC Launcher Alpha
 
 ## 1. Add Account
 
-Open MC Launcher Alpha and go to the **Accounts** page:
+Open VoxVer Launcher and go to the **Accounts** page:
 
 - **Microsoft Login**: Click "Microsoft Login". A browser window will open where you can sign in with your Microsoft account credentials to authorize.
 - **Offline Mode**: Enter any username. Suitable for single-player gameplay.

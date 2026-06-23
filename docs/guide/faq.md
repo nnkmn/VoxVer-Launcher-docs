@@ -4,13 +4,13 @@ title: "常见问题"
 
 # 常见问题
 
-本章节汇总了用户在使用 MC Launcher Alpha 过程中最常遇到的问题及其解决方案。如果你遇到的问题未在此列出，请参阅 [崩溃监控](/guide/crash) 或前往 [GitHub Issues](https://github.com/nnkmn/MC-Launcher-Alpha/issues) 提交反馈。
+本章节汇总了用户在使用 VoxVer Launcher 过程中最常遇到的问题及其解决方案。如果你遇到的问题未在此列出，请参阅 [崩溃监控](/guide/crash) 或前往 [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues) 提交反馈。
 
 ## 启动相关
 
 ### 启动时报「无法找到 Java」？
 
-**原因**：MC Launcher Alpha 无法在系统中检测到有效的 Java 运行时环境。
+**原因**：VoxVer Launcher 无法在系统中检测到有效的 Java 运行时环境。
 
 **解决方案**：
 
@@ -127,12 +127,12 @@ title: "常见问题"
 建议定期备份存档文件夹，防止意外数据丢失。
 :::
 
-### 如何完全卸载 MC Launcher Alpha？
+### 如何完全卸载 VoxVer Launcher？
 
-如果你决定卸载 MC Launcher Alpha，请按以下步骤操作：
+如果你决定卸载 VoxVer Launcher，请按以下步骤操作：
 
 1. **卸载启动器程序**
-   - 通过 Windows 控制面板的「程序和功能」卸载 MC Launcher Alpha
+   - 通过 Windows 控制面板的「程序和功能」卸载 VoxVer Launcher
    - 或运行安装程序选择「卸载」选项
 
 2. **删除游戏数据**（可选）
@@ -140,17 +140,17 @@ title: "常见问题"
    - 注意：这会删除所有游戏版本、Mod、存档和配置
 
 3. **删除启动器配置**（可选）
-   - 删除 MC Launcher Alpha 的应用数据目录（通常位于 `AppData/Roaming/MC Launcher Alpha/` 或 `AppData/Local/MC Launcher Alpha/`）
+   - 删除 VoxVer Launcher 的应用数据目录（通常位于 `AppData/Roaming/VoxVer Launcher/` 或 `AppData/Local/VoxVer Launcher/`）
 
 ::: warning 重要提醒
 卸载前建议先 **导出重要实例** 作为备份，详见 [实例系统](/guide/instances) 的导出功能。
 :::
 
-### MC Launcher Alpha 支持 macOS 或 Linux 吗？
+### VoxVer Launcher 支持 macOS 或 Linux 吗？
 
 当前版本仅支持 **Windows** 平台。macOS 和 Linux 版本正在开发计划中（计划在 v0.4.0+ 版本中提供），敬请期待。
 
-### 如何更新 MC Launcher Alpha？
+### 如何更新 VoxVer Launcher？
 
-- **安装版**：MC Launcher Alpha 会自动检测新版本并提示更新，你也可以手动前往 [GitHub Releases](https://github.com/nnkmn/MC-Launcher-Alpha/releases) 下载最新版本覆盖安装。
+- **安装版**：VoxVer Launcher 会自动检测新版本并提示更新，你也可以手动前往 [GitHub Releases](https://github.com/nnkmn/VoxVer-Launcher/releases) 下载最新版本覆盖安装。
 - **便携版**：需要手动下载新版本并替换文件。建议保留配置文件，仅替换程序文件。

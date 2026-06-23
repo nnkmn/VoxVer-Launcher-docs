@@ -1,10 +1,10 @@
-﻿---
+---
 title: "Account Management"
 ---
 
 # Account Management
 
-MC Launcher Alpha supports multiple login methods to suit different gameplay needs.
+VoxVer Launcher supports multiple login methods to suit different gameplay needs.
 
 ## Supported Login Methods
 

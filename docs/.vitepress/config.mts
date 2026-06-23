@@ -26,7 +26,7 @@ export default defineConfig({
           { text: '下载', link: '/guide/download' },
           {
             text: 'GitHub',
-            link: 'https://github.com/nnkmn/MC-Launcher-Alpha',
+            link: 'https://github.com/nnkmn/VoxVer-Launcher',
           },
         ],
         docFooter: {
@@ -35,7 +35,7 @@ export default defineConfig({
         },
         editLink: {
           text: '在 GitHub 上编辑此页',
-          pattern: 'https://github.com/nnkmn/MC-Launcher-Alpha/edit/main/docs/:path',
+          pattern: 'https://github.com/nnkmn/VoxVer-Launcher-docs/edit/main/docs/:path',
         },
         footer: {
           message: 'VoxVer Launcher 基于 MIT 协议开源',
@@ -115,7 +115,7 @@ export default defineConfig({
           { text: 'Download', link: '/en/guide/download' },
           {
             text: 'GitHub',
-            link: 'https://github.com/nnkmn/MC-Launcher-Alpha',
+            link: 'https://github.com/nnkmn/VoxVer-Launcher',
           },
         ],
         docFooter: {
@@ -124,7 +124,7 @@ export default defineConfig({
         },
         editLink: {
           text: 'Edit this page on GitHub',
-          pattern: 'https://github.com/nnkmn/MC-Launcher-Alpha/edit/main/docs/:path',
+          pattern: 'https://github.com/nnkmn/VoxVer-Launcher-docs/edit/main/docs/:path',
         },
         footer: {
           message: 'VoxVer Launcher is open source under the MIT License',
@@ -195,7 +195,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/nnkmn/MC-Launcher-Alpha' },
+      { icon: 'github', link: 'https://github.com/nnkmn/VoxVer-Launcher' },
     ],
     sidebar: {
       '/': [

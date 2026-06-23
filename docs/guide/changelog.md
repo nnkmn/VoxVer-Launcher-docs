@@ -4,7 +4,7 @@ title: "更新日志"
 
 # 更新日志
 
-本文档记录了 MC Launcher Alpha 各版本的功能变更、修复内容和未来计划。
+本文档记录了 VoxVer Launcher 各版本的功能变更、修复内容和未来计划。
 
 ---
 
@@ -34,6 +34,13 @@ title: "更新日志"
 - **NeoForge 安装优化** — 新增 NeoForge ModLoader 的完整安装支持
 - **Quilt 安装优化** — 完善 Quilt ModLoader 的安装流程
 - **Fabric 安装优化** — 修复 Fabric 安装过程中的问题
+
+### 📝 文档更新
+
+- **启动器名称变更** — 项目正式从「MC Launcher Alpha（MCLA）」更名为「VoxVer Launcher」，代码仓库从 `MC-Launcher-Alpha` 更名为 `VoxVer-Launcher`，文档仓库从 `MC-Launcher-Alpha-docs` 更名为 `VoxVer-Launcher-docs`，所有相关文档内容同步更新
+- **仓库链接更新** — 更新所有 GitHub 链接指向新的 `VoxVer-Launcher` 和 `VoxVer-Launcher-docs` 仓库
+- **错别字修复** — 修复「BMC Launcher AlphaPI」等错别字，统一为「BMCLAPI」
+- **补充缺失功能文档** — 新增 P2P 实例分享、Mod 自动更新、主题自定义、全局快捷键、皮肤管理等章节
 
 ---
 
@@ -287,11 +294,11 @@ npm run dev:zh
 
 ### 首个版本
 
-MC Launcher Alpha 的首个公开版本，包含以下核心功能：
+VoxVer Launcher 的首个公开版本，包含以下核心功能：
 
 - **微软账号登录** — 基于 OAuth 2.0 Device Code Flow 的微软正版登录，安全便捷
 - **离线模式** — 支持自定义用户名的离线登录，适合单机游玩
-- **游戏版本管理** — 基于 BMC Launcher AlphaPI 镜像源，支持正式版、快照、远古版和愚人节版的安装与管理
+- **游戏版本管理** — 基于 BMCLAPI 镜像源，支持正式版、快照、远古版和愚人节版的安装与管理
 - **ModLoader 安装** — 支持 Fabric / Forge / NeoForge / Quilt 四大主流 ModLoader 的一键安装
 - **基础实例系统** — 支持创建独立实例，实现版本隔离和 Mod 隔离
 - **深色主题 UI** — 现代化的深色界面设计，基于 Vue 3 + TypeScript 构建
@@ -327,5 +334,5 @@ MC Launcher Alpha 的首个公开版本，包含以下核心功能：
 :::
 
 ::: tip 参与贡献
-如果你希望为 MC Launcher Alpha 贡献代码或提出功能建议，欢迎前往 [GitHub](https://github.com/nnkmn/MC-Launcher-Alpha) 提交 Pull Request 或 Issue。
+如果你希望为 VoxVer Launcher 贡献代码或提出功能建议，欢迎前往 [GitHub](https://github.com/nnkmn/VoxVer-Launcher) 提交 Pull Request 或 Issue。
 :::
