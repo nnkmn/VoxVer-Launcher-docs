@@ -4,7 +4,7 @@ export default defineConfig({
   base: '/',
   title: 'VoxVer Launcher',
   head: [
-    ['link', { rel: 'icon', href: '/logo.ico' }],
+    ['link', { rel: 'icon', href: '/logo-256.ico' }],
     ['meta', { name: 'theme-color', content: '#1a1a2e' }],
   ],
   description: 'VoxVer Launcher - 一个现代化的 Minecraft 启动器，基于 Electron + Vue 3 + TypeScript',
@@ -193,7 +193,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/logo-256.ico',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nnkmn/VoxVer-Launcher' },
     ],
