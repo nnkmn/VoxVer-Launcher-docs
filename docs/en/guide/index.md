@@ -4,19 +4,21 @@ title: "VoxVer Launcher User Guide"
 
 # VoxVer Launcher User Guide
 
-Welcome to the **VoxVer Launcher** documentation.
+Welcome to the **VoxVer Launcher** User Guide. This guide will help you get started from scratch and quickly master all the features of VoxVer Launcher.
 
-VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + TypeScript**, featuring Microsoft account login, multi-version management, mod downloading and management, instance isolation, P2P sharing, theme customization, global hotkeys, and more.
+## About VoxVer Launcher
 
-## Core Features
+VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + TypeScript**, designed to provide a clean, efficient, and feature-rich game launching experience. Whether you are a premium player or an offline player, VoxVer Launcher has you covered.
 
-- Microsoft authentication (Device Code Flow) + offline mode
-- Complete version management (Release / Snapshot / Old Alpha / Old Beta / April Fools)
+**Core Features:**
+
+- Microsoft authentication (Device Code Flow) + offline mode dual support
+- Complete Minecraft version management (Release / Snapshot / Old Alpha / Old Beta / April Fools)
 - Fabric / Forge / NeoForge / Quilt ModLoader one-click installation
 - CurseForge + Modrinth dual-source mod search, download, and management
-- Instance isolation system for multiple environments
+- Instance isolation system for multiple independent environments
 - P2P instance sharing via 6-digit code
-- Theme customization with color palette editor
+- Theme customization with color palette editor for personalized UI
 - Global hotkeys for quick game launch
 - Built-in crash monitoring and log analysis
 - Dark theme + pixel art UI
@@ -28,18 +30,20 @@ VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + T
 |----------|-------------|----------------|
 | [Download & Install](/en/guide/download) | Download, install, and first launch | All new users |
 | [Quick Start](/en/guide/quick-start) | Five steps to first game launch | Users wanting to get started quickly |
-| [Account Management](/en/guide/accounts) | Microsoft login, offline mode, multi-account | Users managing multiple accounts |
-| [Version Management](/en/guide/versions) | Version install, isolation, ModLoader | Users managing multiple versions |
-| [Mod Management](/en/guide/mods) | Search, download, enable/disable, config | Mod users |
-| [Instance System](/en/guide/instances) | Create, import, export, independent env | Users needing environment isolation |
+| [Account Management](/en/guide/accounts) | Microsoft login, offline mode, multi-account switching | Users managing multiple accounts |
+| [Version Management](/en/guide/versions) | Version install, isolation, ModLoader installation | Users managing multiple versions |
+| [Mod Management](/en/guide/mods) | Search, download, enable/disable, config editing | Mod users |
+| [Instance System](/en/guide/instances) | Create, import, export, independent environment management | Users needing environment isolation |
 | [Java Settings](/en/guide/java) | Auto-detect, manual config, memory tuning | Users with Java issues |
 | [Global Settings](/en/guide/settings) | General, appearance, advanced settings | Users wanting personalization |
 | [Custom Game Path](/en/guide/custom-path) | Game directory, multi-launcher coexistence | Users needing custom storage |
-| [Crash Monitor](/en/guide/crash) | Crash reports, common causes | Users experiencing crashes |
+| [Crash Monitor](/en/guide/crash) | Crash reports, common causes analysis | Users experiencing crashes |
 | [FAQ](/en/guide/faq) | Launch, account, mod questions | Users with any issues |
 | [Changelog](/en/guide/changelog) | Version changes & roadmap | Users following project progress |
 
 ## System Requirements
+
+Before installing VoxVer Launcher, please ensure your system meets the following minimum requirements:
 
 | Item | Minimum Requirement | Recommended |
 |------|-------------------|-------------|
@@ -62,6 +66,6 @@ Current version only supports **Windows**. macOS and Linux versions are in devel
 
 If you encounter any issues while using VoxVer Launcher:
 
-1. **Check the documentation** -- Browse the [FAQ](/en/guide/faq) and [Crash Monitor](/en/guide/crash) sections first.
+1. **Check the documentation** -- Browse the [FAQ](/en/guide/faq) and [Crash Monitor](/en/guide/crash) sections first; most issues can be resolved there.
 2. **Search Issues** -- Check [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues) for similar problems.
 3. **Submit Issue** -- If nothing helps, create a new GitHub Issue with crash logs and system info for faster debugging.

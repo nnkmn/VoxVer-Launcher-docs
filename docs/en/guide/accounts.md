@@ -4,39 +4,94 @@ title: "Account Management"
 
 # Account Management
 
-VoxVer Launcher supports multiple login methods to suit different gameplay needs.
-
-## Supported Login Methods
-
-| Method | Description | Use Case |
-|--------|-------------|----------|
-| Microsoft Login | Device Code Flow, no password entry required in the launcher | Licensed users |
-| Offline Mode | Enter any username | Single-player / testing |
+VoxVer Launcher supports multiple login methods to suit different gameplay needs. This chapter covers Microsoft account login, offline mode, multi-account management, and skin management.
 
 ## Microsoft Login
 
-1. Go to the **Accounts** page
-2. Click "Microsoft Login"
-3. The launcher displays a device code (e.g., `ABCDEF`)
-4. A browser opens to `microsoft.com/devicelogin`
-5. Enter the device code to complete authorization
-6. The launcher automatically obtains and saves the token
+Microsoft login uses the **Device Code Flow** authentication method, which is both secure and convenient. No password is required to be entered in the launcher.
 
-> Tokens are encrypted and stored using Electron safeStorage. They are automatically refreshed afterward, so you do not need to log in again.
+### Login Steps
+
+1. Go to the **Accounts** page
+2. Click **"Microsoft Login"**
+3. The launcher displays a device code and an authorization URL
+4. Open the authorization URL in your browser
+5. Enter the device code on the browser page
+6. Follow the prompts to complete the authorization
+7. The launcher automatically retrieves and saves the account token
+
+### Token Management
+
+- Tokens are **encrypted and stored** using Electron safeStorage
+- Tokens are **automatically refreshed**, eliminating the need for repeated logins
+- If a token expires, the launcher will automatically attempt to refresh it
 
 ## Offline Mode
 
+Offline mode allows you to play without a Microsoft account, suitable for single-player or testing.
+
+### Setting Up
+
 1. Go to the **Accounts** page
-2. Click "Offline Login"
-3. Enter any username
-4. Click Confirm
+2. Click **"Offline Login"**
+3. Enter any username of your choice
+4. Click "Confirm"
+
+::: warning Note
+Offline mode can only play on the current device and cannot connect to online servers that require authentication.
+:::
+
+## Skin Management
+
+VoxVer Launcher supports viewing and managing Minecraft player skins. Skins are automatically cached locally for quick loading.
+
+### Skin Cache Mechanism
+
+When a player's skin is retrieved, the launcher caches it locally. The cache location is:
+
+```
+<VoxVer Launcher Data Directory>/skins/
+```
+
+The cache files are organized by UUID for automatic lookup and cleanup.
+
+### Viewing a Skin
+
+Once logged in, you can view the skin on the account details page. The launcher downloads and displays the **face render** and **full-body render** of the skin.
+
+### Managing Skin Cache
+
+| Operation | Description |
+|-----------|-------------|
+| Refresh Skin | Force re-download the latest skin from the server |
+| Clear Cache | Delete all locally cached skin files |
+
+::: tip Tip
+The skin cache helps reduce server requests and speeds up skin loading. Clearing the cache can force the launcher to re-download the latest skin, but it will require a one-time network download.
+:::
 
 ## Multi-Account Switching
 
-After adding multiple accounts, go to the **Launch** page, select the account you want to use, and click "Set as Active".
+After adding multiple accounts, you can switch between them freely.
+
+### Switching Accounts
+
+1. Go to the **Launch** page
+2. Click the current account avatar or name
+3. Select the account you want to use from the list
+4. The system will automatically switch to the selected account
 
 ## Remove Account
 
-Go to the **Accounts** page, find the corresponding account, and click "Remove".
+If you no longer need a particular account, you can remove it.
 
-> Removing an account does not delete game data. It only clears the saved token and profile information.
+### Removal Steps
+
+1. Go to the **Accounts** page
+2. Find the account you want to remove
+3. Click **"Remove"**
+4. Confirm in the dialog
+
+::: warning Note
+Removing an account does **not** delete game data, mods, or saves. It only clears the saved token and profile information. You will need to log in again if you wish to use this account in the future.
+:::
