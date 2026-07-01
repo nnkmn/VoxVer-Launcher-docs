@@ -1,6 +1,6 @@
 # VoxVer Launcher
 
-**Minecraft Launcher Advanced** — 一个现代化的 Minecraft 启动器
+**VoxVer Launcher** — 一个现代化的 Minecraft 启动器
 
 [中文文档](https://nnkmn.github.io/VoxVer-Launcher-docs/) | [English Docs](https://nnkmn.github.io/VoxVer-Launcher-docs/en/)
 
@@ -22,7 +22,9 @@
 
 | 版本 | 日期 | 主要变更 |
 |------|------|---------|
-| **v0.5.5** | 2026-06-22 | i18n 国际化全面接入、TypeScript 类型修复、UI/UX 优化、ModLoader 安装完善 |
+| **v0.6.1** | 2026-07-02 | 启动稳定性修复（JVM 参数、进程独立运行）、下载可靠性增强（重定向、文件校验）、资源下载源优化 |
+| **v0.6.0** | 2026-06-28 | UI 架构重构（设置页分类拆分、`.vox-*` 控件统一、主题系统重构） |
+| **v0.5.5** | 2026-06-25 | i18n 国际化全面接入、TypeScript 类型修复、UI/UX 优化、ModLoader 安装完善 |
 | **v0.5.4** | 2026-06-20 | 架构优化（Squirrel 安装器、启动器统一、watcher）、性能优化、Bug 修复 |
 | **v0.5.3** | 2026-06-09 | 全局快捷键系统、通知系统增强、版本列表双层缓存、骨架屏优化 |
 | **v0.5.2** | 2026-06-07 | P2P 实例分享（WebRTC）、主题自定义（色盘编辑器）、虚拟列表优化 |

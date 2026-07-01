@@ -8,7 +8,60 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
-## v0.5.5 - 2026-06-22
+## v0.6.1 - 2026-07-02
+
+> **Theme: Launch Stability & Download Reliability Major Fixes**
+
+### 🔧 Game Launch Fixes
+
+| Fix | Impact |
+|-----|--------|
+| **JVM Argument Dedup Fix** | Remove `Set` dedup in `buildJvmArguments` to prevent `--add-opens` args loss causing `ClassNotFoundException` |
+| **Version Parsing Fix** | `extractBaseVersion` regex anchored at start, prevents incorrectly extracting version numbers from modpack names (e.g., "Hello, New Steam Journey! V1.4.2") |
+| **Classpath Dedup** | `buildClasspath` adds `[...new Set(cp)]` dedup, fixes `Duplicate key` errors from duplicate library declarations in version JSON |
+| **GC Parameter Compatibility** | Remove CMS GC (removed in Java 14+), unified to G1GC, fixes `Unrecognized VM option 'UseConcMarkSweepGC'` |
+| **Missing File State Handling** | Frontend correctly handles `needsFileDownload` state, shows confirmation dialog before calling `confirmDownloadAndLaunch` |
+| **Launch Status Switch Fix** | `spawnProcess` no longer blocks waiting for process exit, switches to "Running" state 1.5 seconds after process starts, fixes launcher stuck on "Launching" |
+| **Independent Game Process** | `spawn` option changed to `detached: true`, game runs in independent process group, closing launcher won't terminate the game |
+
+### 📦 File Integrity Verification
+
+- **Library File Size Check** — `checkMissingFiles`, `downloadMissingFiles` add file size verification, detects 0-byte empty files and size mismatched files
+- **Asset File Size Check** — `downloadAssets`, `checkMissingFiles` asset checks add file size verification
+- **Clean Corrupted Files Before Download** — Delete 0-byte or size-mismatched files before re-downloading
+
+### 🌐 Download System Fixes
+
+- **BMCLAPI Redirect Support** — `downloadFile` adds HTTP 301/302/303/307/308 redirect following (max 5 times), fixes 0-byte files caused by BMCLAPI mirror redirects
+- **Post-Download Verification** — Verify file size is not 0 after download, empty files treated as download failure
+- **0-Byte File Skip Fix** — `downloadFile` no longer skips existing 0-byte files
+- **Asset Download Source Optimization** — Asset primary source changed to official Minecraft asset server (`resources.download.minecraft.net`, no rate limit), BMCLAPI as fallback, fixes 3300+ asset files returning 403 due to BMCLAPI rate limiting (10 requests per 60 seconds)
+- **Parallel Download Fallback Support** — `parallelDownload` adds `fallbackUrl` support, auto-tries fallback source on primary failure
+
+### 🎨 UI/UX Optimization
+
+- **Custom Download Confirmation Dialog** — Replaced native `confirm()` with `PxModal` component, includes warning icon, message text, cancel/download-and-launch buttons
+- **Dialog Internationalization** — Added `launch.missingFilesTitle`, `launch.missingFilesMessage`, `launch.missingFilesHint` i18n entries
+
+### ☕ Java Management
+
+- **Default Java Version Recommendation** — Default to Java 21 when version number cannot be parsed (adapts to modern Forge/NeoForge modpacks)
+
+---
+
+## v0.6.0 - 2026-06-28
+
+> **Theme: UI Architecture Refactor & Theme System Enhancement**
+
+### 🎨 UI Refactor
+
+- **Settings Page Categorization** — Settings page split into multiple sub-pages by function category, improving navigation efficiency
+- **Unified Controls** — Global UI controls use `.vox-*` class prefix (`.vox-btn`, `.vox-input`, `.vox-card`, etc.), unified style standards
+- **Theme System Refactor** — Light/dark theme complete switching + background customization + theme color customization, providing a more refined visual experience
+
+---
+
+## v0.5.5 - 2026-06-25
 
 > **Theme: Internationalization Improvement & UI Optimization**
 
@@ -230,13 +283,36 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
-## Planned Features (v0.6.0+)
+## Planned Features (v0.7.0+)
 
-- Mod auto-update detection ✅ (v0.5.x)
-- Modpack creation tools
-- Keyboard shortcuts system ✅ (v0.5.3)
-- Custom background
-- Custom themes (color palette) ✅ (v0.5.2)
-- macOS / Linux support
-- P2P Instance Sharing ✅ (v0.5.2)
-- i18n Internationalization ✅ (v0.5.5)
+The following features are being planned and developed, and will be gradually released in subsequent versions:
+
+| Feature | Description | Expected Version |
+|---------|-------------|------------------|
+| macOS Support | Adapt for macOS platform | v0.7.0+ |
+| Linux Support | Adapt for Linux platform | v0.7.0+ |
+
+### ✅ Completed Features
+
+| Feature | Completed Version |
+|---------|-------------------|
+| P2P Instance Sharing | v0.5.2 |
+| Theme Customization (Color Palette) | v0.5.2 |
+| Modpack Creation Tools | v0.5.2 |
+| Global Keyboard Shortcuts | v0.5.3 |
+| i18n Internationalization | v0.5.5 |
+| Language Switching | v0.5.5 |
+| Mod Auto-Update Detection | v0.5.5 |
+| UI Architecture Refactor (Settings Categorization) | v0.6.0 |
+| Theme System Refactor | v0.6.0 |
+| Launch Stability Fixes | v0.6.1 |
+| Download Reliability Enhancement | v0.6.1 |
+| File Integrity Verification | v0.6.1 |
+
+::: info Note
+The planned features above may be adjusted based on development progress and priorities. Actual release dates and feature details are subject to the actual version release.
+:::
+
+::: tip Contributing
+If you wish to contribute code or suggest features for VoxVer Launcher, feel free to submit a Pull Request or Issue on [GitHub](https://github.com/nnkmn/VoxVer-Launcher).
+:::
