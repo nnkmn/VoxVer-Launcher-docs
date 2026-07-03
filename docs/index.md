@@ -6,7 +6,7 @@ hero:
   text: "新一代 Minecraft 启动器"
   tagline: "一个现代化的 Minecraft 启动器，基于 Electron + Vue 3 + TypeScript 构建，支持简体中文和英文"
   image:
-    src: /airLogo.png
+    src: /Alogo.png
     alt: VoxVer Launcher
   actions:
     - theme: brand

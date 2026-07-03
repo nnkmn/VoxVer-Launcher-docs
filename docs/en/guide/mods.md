@@ -4,7 +4,9 @@ title: "Mod Management"
 
 # Mod Management
 
-VoxVer Launcher features a powerful Mod management system that integrates **CurseForge** and **Modrinth** — two major mod repositories. It supports search, download, enable/disable, configuration editing, update detection, and more all in one place. This chapter covers every aspect of mod management.
+VoxVer Launcher features a powerful Mod management system that integrates **CurseForge** and **Modrinth** — two major mod repositories. It supports search, download, enable/disable, configuration editing, update detection, and more all in one place.
+
+Since v0.6.2, the **Downloads** page features a multi-category view with top tabs for switching between "Vanilla", "Mod", "Modpack", "Datapack", "Resource Pack", "Shader Pack", and "Community Resources", making it easy to find what you need. This chapter covers every aspect of mod management.
 
 ## Search & Download
 
@@ -12,7 +14,7 @@ VoxVer Launcher supports searching and downloading mods from both CurseForge and
 
 ### Search Steps
 
-1. Go to the **Downloads** page
+1. Go to the **Downloads** page and click the "Mod" category tab
 2. Enter the mod name or keywords in the search box
 3. Filter by category tags (e.g., "Utility", "Performance", "Decoration", "Adventure", etc.)
 4. Sort by popularity, download count, update time, etc.

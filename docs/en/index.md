@@ -6,7 +6,7 @@ hero:
   text: "A Next-Gen Minecraft Launcher"
   tagline: "A modern Minecraft launcher built with Electron + Vue 3 + TypeScript, supporting Chinese and English"
   image:
-    src: /airLogo.png
+    src: /Alogo.png
     alt: VoxVer Launcher
   actions:
     - theme: brand

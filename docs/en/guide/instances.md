@@ -43,6 +43,23 @@ If you have used Minecraft with another launcher before, or have an existing `.m
 During the import process, VoxVer Launcher will identify the game version and ModLoader already present in the directory and automatically create the corresponding instance configuration. Existing game files will not be moved or modified.
 :::
 
+### Import from External Launchers
+
+Starting from v0.6.3, VoxVer Launcher supports automatically detecting and importing game instance data from **HMCL (Hello Minecraft! Launcher)** and **PCL2 (Plain Craft Launcher 2)**.
+
+1. Go to the **Instances** page
+2. Click the **"Import"** button and select "Import from External Launcher"
+3. VoxVer Launcher will automatically scan the system for installed HMCL and PCL2 data directories
+4. Detected instances will display instance name, game version, ModLoader type, and mod count
+5. Select the instances to import and click "Confirm Import"
+6. After import, the instances will appear in VoxVer Launcher's instance list
+
+::: tip Advantages
+- **Seamless Migration** — Migrate HMCL or PCL2 instance data to VoxVer Launcher in one click
+- **Preserve Original Data** — Original launcher data will not be modified or deleted
+- **Smart Detection** — Automatically parse instance game version, ModLoader, and mod information
+:::
+
 ## Export Instance
 
 You can package an instance for export, making it easy to share with other players or back up your saves.
@@ -129,6 +146,10 @@ Sender                            VoxVer Signaling Server                  Recei
 3. Enter the 6-digit share code provided by your friend
 4. Wait for the connection to be established
 5. Review the import information and complete the transfer
+
+::: tip Quick Receive - voxver:// Protocol
+Your friend can share directly via a link: `voxver://share:<code>` (e.g., `voxver://share:A1B2C3`). Clicking the link will automatically open VoxVer Launcher and navigate to the receive page — no need to manually enter the share code. This works via VoxVer Launcher's registered custom URL protocol.
+:::
 
 ### Sharing Options
 

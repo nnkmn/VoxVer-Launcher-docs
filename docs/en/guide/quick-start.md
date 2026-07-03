@@ -101,7 +101,7 @@ If auto-detection fails, or if you need to use a specific Java version, see [Jav
 
 ## Step 5: Launch Game
 
-Return to the **Launch** (Home) page:
+From the VoxVer Launcher home page, click the launch area next to the **"Downloads"** button in the quick actions, or navigate directly to the **Launch** page:
 
 1. Make sure the correct account is selected (in the account dropdown)
 2. Make sure the correct game version is selected

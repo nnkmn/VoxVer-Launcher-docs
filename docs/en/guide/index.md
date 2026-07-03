@@ -16,12 +16,13 @@ VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + T
 - Complete Minecraft version management (Release / Snapshot / Old Alpha / Old Beta / April Fools)
 - Fabric / Forge / NeoForge / Quilt ModLoader one-click installation
 - CurseForge + Modrinth dual-source mod search, download, and management
-- Instance isolation system for multiple independent environments
-- P2P instance sharing via 6-digit code
+- Multi-category download view (Vanilla / Mod / Modpack / Datapack / Resource Pack / Shader Pack / Community Resources)
+- Instance isolation system with one-click import from HMCL / PCL2 external launchers
+- P2P instance sharing via 6-digit code or voxver:// protocol link
+- Design Token system + frosted glass UI effects
 - Theme customization with color palette editor for personalized UI
 - Global hotkeys for quick game launch
 - Built-in crash monitoring and log analysis
-- Dark theme + pixel art UI
 - Internationalization (Chinese and English)
 
 ## Quick Navigation

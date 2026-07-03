@@ -49,6 +49,38 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
+## v0.6.2 - 2026-07-04
+
+> **Theme: Design System Refactor & Splash Screen Optimization**
+
+### 🎨 Design System Refactor
+
+- **Design Token System** — Added `tokens.scss`, defining OLED dark base (`#0a0a0a` → `#0d0d0d` → `#141414` → `#1a1a1a` four-level gradient), Neubrutalism utility classes
+- **Frosted Glass Effect** — Unified `backdrop-filter: blur(8px)` + `color-mix` semi-transparent effect across sidebar, main content area, and version info area
+- **Frosted Layer Fix** — Moved `backdrop-filter` to `::before` pseudo-element, fixing text blur issue
+- **HomePage Simplification** — Removed launch button and stats cards, Hero card now shows only Logo + guide text
+- **Bento Grid Layout Optimization** — Fixed card height auto-expansion and empty column issues
+
+### 🖥️ Splash Screen Optimization
+
+- **Dynamic Version Loading** — Version number read from `package.json`, injected at build time via `transformIndexHtml`, displayed in real-time on splash screen
+- **Progress Bar Animation** — 4-second uniform progress, fades out via `transitionend` event with 0.8s transition, eliminating screen flicker
+- **Logo Replacement** — Splash screen now displays Alogo.png instead of text title
+
+### 🎨 UI Details
+
+- **Settings Page** — Hidden scrollbars (Chrome / Safari / Firefox / IE full coverage)
+- **Sidebar** — Hidden scrollbars; removed bottom version info
+- **About Page** — Adapted to frosted glass texture; Alogo replaced airLogo
+- **Color Picker** — Fixed frosted layer blocking clicks (`pointer-events: none`)
+- **Theme Color** — Removed Hero card blue gradient background, switched to solid background color
+
+### 🔧 Build
+
+- **Version Injection** — `electron.vite.config.ts` added `html-inject-version` plugin for dynamic version injection at build time
+
+---
+
 ## v0.6.0 - 2026-06-28
 
 > **Theme: UI Architecture Refactor & Theme System Enhancement**
@@ -308,6 +340,10 @@ The following features are being planned and developed, and will be gradually re
 | Launch Stability Fixes | v0.6.1 |
 | Download Reliability Enhancement | v0.6.1 |
 | File Integrity Verification | v0.6.1 |
+| Design Token System | v0.6.2 |
+| Frosted Glass UI Effect | v0.6.2 |
+| Splash Screen Optimization | v0.6.2 |
+| HomePage Refactor | v0.6.2 |
 
 ::: info Note
 The planned features above may be adjusted based on development progress and priorities. Actual release dates and feature details are subject to the actual version release.

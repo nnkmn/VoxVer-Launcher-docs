@@ -120,6 +120,10 @@ Appearance settings allow you to customize the VoxVer Launcher interface style.
 
 Switch between dark and light themes. Dark theme is suitable for low-light environments, while light theme works best in bright environments. Starting from v0.6.0, the theme system has been refactored with complete light/dark coverage styles.
 
+::: info v0.6.2 Design Token System
+Starting from v0.6.2, the theme system introduces a Design Token framework (`tokens.scss`), using an OLED dark base with a four-level gradient (`#0a0a0a` → `#0d0d0d` → `#141414` → `#1a1a1a`), providing richer depth for the dark theme. The interface also features comprehensive frosted glass effects (`backdrop-filter: blur(8px)`) across the sidebar, main content area, and version info area, all presenting a semi-transparent frosted glass texture.
+:::
+
 ### Background Customization
 
 Background customization is supported since v0.5.5. You can select a local image as the launcher background and adjust blur and dim levels for optimal readability.
