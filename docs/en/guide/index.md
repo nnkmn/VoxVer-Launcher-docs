@@ -19,10 +19,15 @@ VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + T
 - Multi-category download view (Vanilla / Mod / Modpack / Datapack / Resource Pack / Shader Pack / Community Resources)
 - Instance isolation system with one-click import from HMCL / PCL2 external launchers
 - P2P instance sharing via 6-digit code or voxver:// protocol link
+- File integrity verification + multi-source download (Official + BMCLAPI)
+- Player skin download and rendering
 - Design Token system + frosted glass UI effects
 - Theme customization with color palette editor for personalized UI
 - Global hotkeys for quick game launch
+- Auto-update (GitHub Releases detection + background download + one-click install)
 - Built-in crash monitoring and log analysis
+- Data backup and migration
+- Custom .minecraft path
 - Internationalization (Chinese and English)
 
 ## Quick Navigation
