@@ -8,6 +8,58 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
+## v0.6.4 - 2026-07-17
+
+> **Theme: macOS System Adaptation & Account Management Optimization**
+
+### 🍎 macOS System Adaptation
+
+- **macOS Dual Architecture Build** — New ARM64 / x64 dual architecture build support, macOS users can now download DMG packages directly
+- **CI/CD Upgrade** — GitHub Actions now auto-builds macOS DMG packages
+- **Node.js 24 LTS** — Runtime adapted for macOS 26, ensuring compatibility
+
+### 👤 Account Management Optimization
+
+- **Add Account Flow Optimization** — Clicking the "Add Account" button now directly navigates to the "Game Accounts & Profiles" tab in the Settings page, replacing the standalone account management popup for a smoother experience
+
+### 🔧 Build
+
+- Version bumped to v0.6.4
+
+---
+
+## v0.6.2 - 2026-07-04
+
+> **Theme: Design System Refactoring & Splash Screen Optimization**
+
+### 🎨 Design System Refactoring
+
+- **Design Token System** — New `tokens.scss` defining OLED dark base (`#0a0a0a` → `#0d0d0d` → `#141414` → `#1a1a1a` four-layer steps), Neubrutalism utility classes
+- **Frosted Glass Effect** — Sidebar, main content area, and version info region uniformly apply `backdrop-filter: blur(8px)` + `color-mix` semi-transparent effect
+- **Frost Layer Fix** — Moved `backdrop-filter` to `::before` pseudo-element to resolve text blur issue
+- **HomePage Simplification** — Removed launch button and stats cards, Hero card now displays only Logo + guide text
+- **Bento Grid Layout Fix** — Fixed card height stretching and empty column issues
+
+### 🖥️ Splash Screen Optimization
+
+- **Dynamic Version Loading** — Version number read from `package.json` and injected at build time via `transformIndexHtml`, showing current version in real-time on splash screen
+- **Progress Bar Animation** — Progress bar runs uniformly over 4 seconds, then fades out over 0.8s via `transitionend` event — no more flicker
+- **Logo Replacement** — Splash screen now displays Alogo.png instead of text title
+
+### 🎨 UI Details
+
+- **Settings Page** — Hidden scrollbar (Chrome / Safari / Firefox / IE full coverage)
+- **Sidebar** — Hidden scrollbar; removed bottom version info
+- **About Page** — Adapted frosted glass texture; replaced airLogo with Alogo
+- **Color Picker** — Fixed frosted layer blocking clicks (`pointer-events: none`)
+- **Theme Colors** — Removed blue gradient background from Hero card, now uses solid background color
+
+### 🔧 Build
+
+- **Version Injection** — Added `html-inject-version` plugin in `electron.vite.config.ts` for build-time version injection
+
+---
+
 ## v0.6.1 - 2026-07-02
 
 > **Theme: Launch Stability & Download Reliability Major Fixes**
@@ -46,40 +98,6 @@ This document records the feature changes, bug fixes and future plans for each v
 ### ☕ Java Management
 
 - **Default Java Version Recommendation** — Default to Java 21 when version number cannot be parsed (adapts to modern Forge/NeoForge modpacks)
-
----
-
-## v0.6.2 - 2026-07-04
-
-> **Theme: Design System Refactor & Splash Screen Optimization**
-
-### 🎨 Design System Refactor
-
-- **Design Token System** — Added `tokens.scss`, defining OLED dark base (`#0a0a0a` → `#0d0d0d` → `#141414` → `#1a1a1a` four-level gradient), Neubrutalism utility classes
-- **Frosted Glass Effect** — Unified `backdrop-filter: blur(8px)` + `color-mix` semi-transparent effect across sidebar, main content area, and version info area
-- **Frosted Layer Fix** — Moved `backdrop-filter` to `::before` pseudo-element, fixing text blur issue
-- **HomePage Simplification** — Removed launch button and stats cards, Hero card now shows only Logo + guide text
-- **Bento Grid Layout Optimization** — Fixed card height auto-expansion and empty column issues
-
-### 🖥️ Splash Screen Optimization
-
-- **Dynamic Version Loading** — Version number read from `package.json`, injected at build time via `transformIndexHtml`, displayed in real-time on splash screen
-- **Progress Bar Animation** — 4-second uniform progress, fades out via `transitionend` event with 0.8s transition, eliminating screen flicker
-- **Logo Replacement** — Splash screen now displays Alogo.png instead of text title
-
-### 🎨 UI Details
-
-- **Settings Page** — Hidden scrollbars (Chrome / Safari / Firefox / IE full coverage)
-- **Sidebar** — Hidden scrollbars; removed bottom version info
-- **About Page** — Adapted to frosted glass texture; Alogo replaced airLogo
-- **Color Picker** — Fixed frosted layer blocking clicks (`pointer-events: none`)
-- **Theme Color** — Removed Hero card blue gradient background, switched to solid background color
-
-### 🔧 Build
-
-- **Version Injection** — `electron.vite.config.ts` added `html-inject-version` plugin for dynamic version injection at build time
-
----
 
 ## v0.6.0 - 2026-06-28
 
@@ -321,7 +339,6 @@ The following features are being planned and developed, and will be gradually re
 
 | Feature | Description | Expected Version |
 |---------|-------------|------------------|
-| macOS Support | Adapt for macOS platform | v0.7.0+ |
 | Linux Support | Adapt for Linux platform | v0.7.0+ |
 
 ### ✅ Completed Features
@@ -344,6 +361,7 @@ The following features are being planned and developed, and will be gradually re
 | Frosted Glass UI Effect | v0.6.2 |
 | Splash Screen Optimization | v0.6.2 |
 | HomePage Refactor | v0.6.2 |
+| macOS Support | v0.6.4 |
 
 ::: info Note
 The planned features above may be adjusted based on development progress and priorities. Actual release dates and feature details are subject to the actual version release.

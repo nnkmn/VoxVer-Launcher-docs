@@ -53,7 +53,7 @@ Before installing VoxVer Launcher, please ensure your system meets the following
 
 | Item | Minimum Requirement | Recommended |
 |------|-------------------|-------------|
-| Operating System | Windows 10 64-bit | Windows 10/11 64-bit |
+| Operating System | Windows 10 64-bit | Windows 10/11 64-bit / macOS |
 | CPU | x64 architecture | x64 multi-core |
 | Memory | 8 GB or more | 16 GB or more |
 | Disk Space | 500 MB (launcher only) | SSD, 10 GB+ (with game files) |
@@ -64,8 +64,8 @@ Before installing VoxVer Launcher, please ensure your system meets the following
 VoxVer Launcher itself has low hardware requirements, but running Minecraft requires higher specs depending on game version and mod count.
 :::
 
-::: warning Warning
-Current version only supports **Windows**. macOS and Linux versions are in development.
+::: tip System Support
+Current version supports **Windows** and **macOS**. Linux version is in development.
 :::
 
 ## Having Trouble?
