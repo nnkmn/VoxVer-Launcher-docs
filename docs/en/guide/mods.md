@@ -40,9 +40,37 @@ Go to the **Instance Details** page to view and manage all mods installed in tha
 | Action | Description | Details |
 |--------|-------------|---------|
 | Enable / Disable | Toggle the mod's loading state | Click the switch next to the mod to toggle — no need to delete the file. Disabled mods will not be loaded by the game, but the file remains in the `mods/` directory (the filename will have a `.disabled` suffix appended) |
-| Config Editing | Edit the mod's configuration file | Supports `.toml` and `.json` format config files. Click the "Edit" button to open the built-in editor — save after making changes and the new configuration will take effect immediately |
+| Config Editing | Edit the mod's configuration file | Supports `.toml`, `.json`, `.cfg`, `.conf`, `.ini` format config files. Click the "Edit" button to open the built-in editor — save after making changes and the new configuration will take effect immediately |
 | Delete | Remove the mod from the instance | Clicking "Delete" will permanently remove the mod file from the `mods/` directory. A confirmation dialog will appear before deletion |
-| Update Detection | Check if the mod has a newer version | Based on Modrinth SHA1 hash comparison, automatically detects available updates for installed mods. An update indicator will be shown when updates are available |
+| Install from File | Import mod from local file | Click "Install from File" to select local `.jar` files, supports multi-select batch import, automatically copies to instance's `mods/` directory |
+| Dependency Check | Check mod prerequisites | Automatically detects dependency relationships (required / optional / incompatible / embedded) for installed mods via Modrinth API, shows red badge when dependencies are missing |
+| Install Dependencies | One-click install missing deps | After detecting missing dependencies, click "Install Dependencies" to automatically download and install required prerequisite mods from Modrinth |
+| Update Detection | Check if the mod has a newer version | Based on Modrinth SHA1 hash comparison, automatically detects available updates for installed mods. An orange update badge will be shown when updates are available |
+
+### Mod Metadata Parsing
+
+VoxVer Launcher uses `@xmcl/mod-parser` to automatically parse metadata from mod jar files, supporting the following formats:
+
+| Format | ModLoader | Parsed Content |
+|--------|----------|---------------|
+| `fabric.mod.json` | Fabric | Name, version, authors, description, homepage, dependencies, icon |
+| `quilt.mod.json` | Quilt | Name, version, contributors, description, homepage, dependencies, icon |
+| `mods.toml` | Forge / NeoForge | Display name, version, authors, description, homepage, dependencies, logo |
+| `mcmod.info` | Forge (legacy) | Name, version, authors, description, homepage, logo |
+| `MANIFEST.MF` | Generic | Name, version, description, authors |
+
+Mod icons are automatically extracted from jars and cached locally for display in the list. For mods that cannot be parsed, the app falls back to inferring name and version from the filename.
+
+### Mod Detail Popup
+
+On the Instance Details page, click a mod row or the "Detail" button to open a popup window showing complete information:
+
+- **Name & Version** — Mod name and current version number
+- **Authors** — Mod authors/development team
+- **Description** — Mod feature description
+- **Dependencies** — Required dependencies list
+- **Homepage Link** — Official website or Modrinth/CurseForge project page
+- **File Path** — Full local disk path of the mod file
 
 ## ModLoader Support
 
@@ -136,4 +164,35 @@ Mark "Update Available" in mod list
 - The auto-update feature only works for mods downloaded from Modrinth.
 - Some mods may have version compatibility requirements; please check that the new version matches your game version before updating.
 - The game must be closed during the update process. Restart the game after the update is complete for changes to take effect.
+:::
+
+## Dependency Management
+
+VoxVer Launcher features a built-in **Mod Dependency Detection** system that automatically analyzes prerequisite dependencies for each mod, helping avoid the common issue of mods not working due to missing dependencies.
+
+### Dependency Types
+
+Dependency relationships are categorized as follows:
+
+| Type | Identifier | Description |
+|------|-----------|-------------|
+| Required | `required` | Must be installed, otherwise the mod will not function |
+| Optional | `optional` | Optional install, provides extra features but not required |
+| Incompatible | `incompatible` | Conflicts with this mod, cannot be installed together |
+| Embedded | `embedded` | Dependency is already included in the mod, no separate install needed |
+
+### Usage Steps
+
+1. Go to the **Instance Details** page
+2. Click the **"Check Dependencies"** button in the toolbar
+3. The launcher will compute SHA1 hashes for each mod and query their dependencies via the Modrinth API
+4. After detection completes, mods with missing dependencies will show a red `⚠ N deps missing` badge in the list
+5. Select a mod with missing dependencies and click the **"Install N deps"** button in the bottom action bar
+6. The launcher will automatically download and install all required dependencies from Modrinth
+7. After installation, the mod list and dependency check status will refresh automatically
+
+::: tip
+- Dependency detection also relies on the Modrinth API and only works for mods recognizable on Modrinth.
+- The system only auto-installs dependencies marked as `required`; optional dependencies can be searched and installed manually.
+- Dependencies are automatically matched to the current game version and ModLoader type to ensure compatibility.
 :::
