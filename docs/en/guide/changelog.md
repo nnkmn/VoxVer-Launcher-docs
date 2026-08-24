@@ -8,6 +8,40 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
+## v0.7.0 - In Development
+
+> **Theme: Design System Completion + Component Library + Multiplayer Settings + Launch Enhancement**
+
+### 🎨 Design System Completion
+
+- **Component Library Complete** — Finished design system and component library, unified component type definitions, eliminated `any` types
+- **Theme Variable Fixes** — Replaced all hardcoded colors with CSS variable tokens for correct dark/light mode switching
+- **Theme Palette Optimization** — Reduced theme color palette gaps, left-aligned color picker
+
+### ⚔️ Multiplayer Settings
+
+- **Settings Page Multiplayer Entry** — Added "Multiplayer" sidebar entry in settings
+- **P2P & Multiplayer Separation** — Separated P2P sharing and multiplayer settings into independent sections
+
+### 🌐 Internationalization Completion
+
+- **i18n Full Completion** — Fixed ~560+ hardcoded Chinese text occurrences, added ~300 locale keys across 33 files
+- **P2P Sharing Improvements** — Fixed import config loss, cancel during transfer, unpack progress push, disk space check, English error messages
+
+### 🚀 Launch Process Enhancement
+
+- **Immediate Stop on Abort** — Clicking stop during launch no longer waits 90s timeout; aborts immediately during dependency download/diagnose/version parsing
+- **Stop Detail Popup** — JVM exit non-zero now renders friendly error summary popup instead of just showing "stopped"
+- **Fake JAR Precise Detection** — Improved corrupted file detection to prevent 0-byte HTML from being treated as valid libraries
+- **Auto-fix Corrupted Files** — JVM exit automatically scans and lists corrupted JAR paths + sizes + reasons
+
+### 📦 Download System Optimization
+
+- **Multi-source Timeout Control** — Download supports multi-source auto-switching with timeout control
+- **Global Progress Panel** — Global download progress panel UI optimization
+
+---
+
 ## v0.6.4 - 2026-07-17
 
 > **Theme: macOS System Adaptation & Account Management Optimization**
@@ -333,13 +367,13 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
-## Planned Features (v0.7.0+)
+## Planned Features (v0.8.0+)
 
 The following features are being planned and developed, and will be gradually released in subsequent versions:
 
 | Feature | Description | Expected Version |
 |---------|-------------|------------------|
-| Linux Support | Adapt for Linux platform | v0.7.0+ |
+| Linux Support | Adapt for Linux platform | v0.8.0+ |
 
 ### ✅ Completed Features
 
@@ -362,6 +396,10 @@ The following features are being planned and developed, and will be gradually re
 | Splash Screen Optimization | v0.6.2 |
 | HomePage Refactor | v0.6.2 |
 | macOS Support | v0.6.4 |
+| Design System Completion + Component Library | v0.7.0 |
+| Multiplayer Settings | v0.7.0 |
+| i18n Full Completion | v0.7.0 |
+| Launch Enhancement (Stop Abort + Corrupted File Detection) | v0.7.0 |
 
 ::: info Note
 The planned features above may be adjusted based on development progress and priorities. Actual release dates and feature details are subject to the actual version release.

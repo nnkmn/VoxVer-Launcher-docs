@@ -148,7 +148,7 @@ Before uninstalling, it is recommended to **export important instances** as a ba
 
 ### Does VoxVer Launcher support macOS or Linux?
 
-The current version only supports **Windows**. macOS and Linux versions are planned for development (targeting v0.4.0+), so stay tuned.
+The current version supports **Windows** and **macOS** (ARM64 / x64 dual architecture). Linux version is in development.
 
 ### How to update VoxVer Launcher?
 

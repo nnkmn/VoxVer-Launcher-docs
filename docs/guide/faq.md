@@ -148,7 +148,7 @@ title: "常见问题"
 
 ### VoxVer Launcher 支持 macOS 或 Linux 吗？
 
-当前版本仅支持 **Windows** 平台。macOS 和 Linux 版本正在开发计划中（计划在 v0.4.0+ 版本中提供），敬请期待。
+VoxVer Launcher 已支持 **Windows** 和 **macOS** 平台（macOS ARM64 / x64 双架构）。Linux 版本正在开发计划中，敬请期待。
 
 ### 如何更新 VoxVer Launcher？
 

@@ -16,6 +16,8 @@ VoxVer Launcher 的正式发布版本托管在 GitHub Releases 上。
 |--------|------|---------|
 | `VoxVer Launcher Setup x.x.x.exe` | NSIS 安装程序（推荐） | Windows |
 | `VoxVer Launcher x.x.x.zip` | 便携版压缩包（免安装） | Windows |
+| `VoxVer Launcher-x.x.x-arm64.dmg` | macOS ARM64 安装包（推荐，Apple Silicon） | macOS (Apple Silicon) |
+| `VoxVer Launcher-x.x.x-x64.dmg` | macOS x64 安装包 | macOS (Intel) |
 
 ::: tip 推荐
 普通用户建议下载 **NSIS 安装程序**，安装后会自动创建桌面快捷方式和开始菜单项，后续更新也更方便。
@@ -43,6 +45,20 @@ VoxVer Launcher 的正式发布版本托管在 GitHub Releases 上。
 便携版不会自动创建快捷方式，也不会写入注册表。更新时需要手动下载新版本并替换文件。
 :::
 
+## macOS 安装步骤
+
+1. 根据你的 Mac 芯片类型下载对应的 DMG 文件：
+   - **Apple Silicon (M1/M2/M3/M4)**：下载 `arm64` 版本
+   - **Intel**：下载 `x64` 版本
+2. 双击打开 `.dmg` 文件
+3. 将 **VoxVer Launcher** 图标拖入 **Applications（应用程序）** 文件夹
+4. 首次打开时，如果系统提示「无法验证开发者」，请前往 **系统设置 → 隐私与安全性**，点击「仍要打开」
+5. VoxVer Launcher 会自动启动
+
+::: tip 提示
+macOS 版本功能与 Windows 版本完全一致。自 v0.6.4 起支持 macOS ARM64 和 x64 双架构构建。
+:::
+
 ## 从源码构建
 
 如果你是开发者，或者希望体验最新的开发版本，可以从源码构建 VoxVer Launcher。
@@ -51,7 +67,7 @@ VoxVer Launcher 的正式发布版本托管在 GitHub Releases 上。
 
 在开始之前，请确保你的系统已安装以下工具：
 
-- **Node.js** 18.x 或更高版本
+- **Node.js** 24.x 或更高版本
 - **npm** 9.x 或更高版本（随 Node.js 一起安装）
 - **Git** 最新版本
 

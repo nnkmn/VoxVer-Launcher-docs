@@ -61,14 +61,14 @@ features:
 
 | 层级 | 技术 | 版本 |
 |------|------|------|
-| 桌面框架 | Electron | 33.4 |
+| 桌面框架 | Electron | 42.6 |
 | 前端框架 | Vue 3 | 3.5 |
-| 构建工具 | electron-vite | 2.3 |
+| 构建工具 | electron-vite | 5.0 |
 | 语言 | TypeScript | 5.5 |
-| UI 样式 | SCSS + CSS Variables | 像素风设计系统 |
+| UI 样式 | SCSS + CSS Variables | Design Token 像素风设计系统 |
 | 状态管理 | Pinia | 2.2 |
 | 路由 | Vue Router | 4.4 |
-| 数据库 | better-sqlite3 | 11.0 |
+| 数据库 | better-sqlite3 | 12.0 |
 | 日志 | electron-log | 5.0 |
 
 ## 📋 支持平台
@@ -76,7 +76,7 @@ features:
 | 平台 | 状态 | 架构 |
 |------|------|------|
 | Windows 10+ | ✅ 已支持 | x64 |
-| macOS | ⏳ 计划中 | x64 / arm64 |
+| macOS | ✅ 已支持 | x64 / arm64 |
 | Linux | ⏳ 计划中 | x64 |
 
 ## 🙏 鸣谢

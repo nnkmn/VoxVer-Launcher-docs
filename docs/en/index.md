@@ -61,14 +61,14 @@ features:
 
 | Layer | Technology | Version |
 |-------|-----------|---------|
-| Desktop Framework | Electron | 33.4 |
+| Desktop Framework | Electron | 42.6 |
 | Frontend Framework | Vue 3 | 3.5 |
-| Build Tool | electron-vite | 2.3 |
+| Build Tool | electron-vite | 5.0 |
 | Language | TypeScript | 5.5 |
-| UI Styling | SCSS + CSS Variables | Pixel Art Design System |
+| UI Styling | SCSS + CSS Variables | Design Token Pixel Art Design System |
 | State Management | Pinia | 2.2 |
 | Router | Vue Router | 4.4 |
-| Database | better-sqlite3 | 11.0 |
+| Database | better-sqlite3 | 12.0 |
 | Logging | electron-log | 5.0 |
 
 ## 📋 Supported Platforms
@@ -76,7 +76,7 @@ features:
 | Platform | Status | Architecture |
 |----------|--------|-------------|
 | Windows 10+ | ✅ Supported | x64 |
-| macOS | ⏳ Planned | x64 / arm64 |
+| macOS | ✅ Supported | x64 / arm64 |
 | Linux | ⏳ Planned | x64 |
 
 ## 🙏 Acknowledgements

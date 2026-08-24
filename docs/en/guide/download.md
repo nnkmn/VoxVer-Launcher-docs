@@ -16,6 +16,8 @@ Go to [GitHub Releases](https://github.com/nnkmn/VoxVer-Launcher/releases) to fi
 |-----------|-------------|----------|
 | `VoxVer Launcher Setup x.x.x.exe` | NSIS Installer (Recommended) | Windows |
 | `VoxVer Launcher x.x.x.zip` | Portable Version (No Install) | Windows |
+| `VoxVer Launcher-x.x.x-arm64.dmg` | macOS ARM64 Installer (Recommended, Apple Silicon) | macOS (Apple Silicon) |
+| `VoxVer Launcher-x.x.x-x64.dmg` | macOS x64 Installer | macOS (Intel) |
 
 ::: tip Recommendation
 Regular users should download the **NSIS Installer** for automatic desktop shortcuts and start menu entries, making future updates easier.
@@ -43,6 +45,20 @@ Regular users should download the **NSIS Installer** for automatic desktop short
 The portable version does not create shortcuts or write to the registry. You need to manually download new versions and replace files for updates.
 :::
 
+## macOS Installation
+
+1. Download the DMG file matching your Mac's chip type:
+   - **Apple Silicon (M1/M2/M3/M4)**: Download the `arm64` version
+   - **Intel**: Download the `x64` version
+2. Double-click to open the `.dmg` file
+3. Drag the **VoxVer Launcher** icon into the **Applications** folder
+4. On first launch, if macOS says "cannot be verified", go to **System Settings → Privacy & Security** and click "Open Anyway"
+5. VoxVer Launcher will start automatically
+
+::: tip
+The macOS version has the same features as the Windows version. macOS ARM64 and x64 dual-architecture builds have been supported since v0.6.4.
+:::
+
 ## Build from Source
 
 If you are a developer or want to try the latest development version, you can build VoxVer Launcher from source.
@@ -51,7 +67,7 @@ If you are a developer or want to try the latest development version, you can bu
 
 Make sure you have the following installed:
 
-- **Node.js** 18.x or later
+- **Node.js** 24.x or later
 - **npm** 9.x or later (included with Node.js)
 - **Git** (latest version)
 

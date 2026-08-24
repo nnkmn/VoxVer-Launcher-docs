@@ -59,6 +59,21 @@ Starting from v0.6.1, the primary download source for asset files is changed to 
 
 Configure the Java runtime environment and memory allocation here. See [Java Settings](/en/guide/java) for details.
 
+## Multiplayer
+
+**Path**: Settings → Network → Multiplayer
+
+Since v0.7.0, P2P sharing and multiplayer settings have been separated into their own section.
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| P2P Sharing | Enable/disable P2P instance sharing | Enabled |
+| Multiplayer Service | Configure multiplayer game services | Default |
+
+::: tip
+For P2P sharing usage, see the P2P Instance Sharing section in [Instance System](/en/guide/instances).
+:::
+
 ## Advanced Settings
 
 **Path**: Settings → Game → Advanced
