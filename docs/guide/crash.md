@@ -87,7 +87,7 @@ VoxVer Launcher 内置了崩溃监控系统，能够在游戏异常退出时自�
 
 1. 在 VoxVer Launcher 的崩溃记录中找到对应的崩溃报告
 2. 点击 **「导出报告」** 按钮，将崩溃信息导出为文件
-3. 前往 [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues)
+3. 前往 [GitHub Issues](https://github.com/MeowY-Studios/VoxVer-Launcher/issues)
 4. 点击「New Issue」创建新的问题报告
 5. 在报告中包含以下信息：
    - **操作系统版本**（如 Windows 11 23H2）

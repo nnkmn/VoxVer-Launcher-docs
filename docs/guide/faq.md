@@ -4,7 +4,7 @@ title: "常见问题"
 
 # 常见问题
 
-本章节汇总了用户在使用 VoxVer Launcher 过程中最常遇到的问题及其解决方案。如果你遇到的问题未在此列出，请参阅 [崩溃监控](/guide/crash) 或前往 [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues) 提交反馈。
+本章节汇总了用户在使用 VoxVer Launcher 过程中最常遇到的问题及其解决方案。如果你遇到的问题未在此列出，请参阅 [崩溃监控](/guide/crash) 或前往 [GitHub Issues](https://github.com/MeowY-Studios/VoxVer-Launcher/issues) 提交反馈。
 
 ## 启动相关
 
@@ -152,5 +152,5 @@ VoxVer Launcher 已支持 **Windows** 和 **macOS** 平台（macOS ARM64 / x64 �
 
 ### 如何更新 VoxVer Launcher？
 
-- **安装版**：VoxVer Launcher 会自动检测新版本并提示更新，你也可以手动前往 [GitHub Releases](https://github.com/nnkmn/VoxVer-Launcher/releases) 下载最新版本覆盖安装。
+- **安装版**：VoxVer Launcher 会自动检测新版本并提示更新，你也可以手动前往 [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/releases) 下载最新版本覆盖安装。
 - **便携版**：需要手动下载新版本并替换文件。建议保留配置文件，仅替换程序文件。

@@ -87,7 +87,7 @@ If you have tried all the above methods and still cannot resolve the issue, you 
 
 1. Locate the crash report in VoxVer Launcher's crash records
 2. Click the **"Export Report"** button to export the crash information as a file
-3. Go to [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues)
+3. Go to [GitHub Issues](https://github.com/MeowY-Studios/VoxVer-Launcher/issues)
 4. Click "New Issue" to create a new issue report
 5. Include the following information in the report:
    - **Operating system version** (e.g., Windows 11 23H2)

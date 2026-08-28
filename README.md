@@ -78,7 +78,7 @@ npm run docs:preview
 
 ## 📄 协议
 
-本项目基于 [MIT 协议](https://github.com/nnkmn/VoxVer-Launcher/blob/main/LICENSE) 开源。
+本项目基于 [MIT 协议](https://github.com/MeowY-Studios/VoxVer-Launcher/blob/main/LICENSE) 开源。
 
 > Minecraft 是 Microsoft Corporation 的商标。本项目与 Mojang Studios 或 Microsoft 无关。
 

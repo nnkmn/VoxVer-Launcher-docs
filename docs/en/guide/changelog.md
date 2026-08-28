@@ -406,5 +406,5 @@ The planned features above may be adjusted based on development progress and pri
 :::
 
 ::: tip Contributing
-If you wish to contribute code or suggest features for VoxVer Launcher, feel free to submit a Pull Request or Issue on [GitHub](https://github.com/nnkmn/VoxVer-Launcher).
+If you wish to contribute code or suggest features for VoxVer Launcher, feel free to submit a Pull Request or Issue on [GitHub](https://github.com/MeowY-Studios/VoxVer-Launcher).
 :::

@@ -14,7 +14,7 @@ hero:
       link: /en/guide/
     - theme: alt
       text: GitHub
-      link: https://github.com/nnkmn/VoxVer-Launcher
+      link: https://github.com/MeowY-Studios/VoxVer-Launcher
 
 features:
   - icon: "⚡"
@@ -90,7 +90,7 @@ features:
 
 ## 📄 License
 
-This project is open source under the [MIT License](https://github.com/nnkmn/VoxVer-Launcher/blob/main/LICENSE).
+This project is open source under the [MIT License](https://github.com/MeowY-Studios/VoxVer-Launcher/blob/main/LICENSE).
 
 > Minecraft is a trademark of Microsoft Corporation. This project is not affiliated with Mojang Studios or Microsoft.
 

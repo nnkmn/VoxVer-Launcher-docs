@@ -4,7 +4,7 @@ title: "FAQ"
 
 # FAQ
 
-This chapter compiles the most frequently encountered issues and their solutions when using VoxVer Launcher. If your issue is not listed here, please refer to [Crash Monitor](/guide/crash) or submit feedback via [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues).
+This chapter compiles the most frequently encountered issues and their solutions when using VoxVer Launcher. If your issue is not listed here, please refer to [Crash Monitor](/guide/crash) or submit feedback via [GitHub Issues](https://github.com/MeowY-Studios/VoxVer-Launcher/issues).
 
 ## Launch Issues
 
@@ -152,5 +152,5 @@ The current version supports **Windows** and **macOS** (ARM64 / x64 dual archite
 
 ### How to update VoxVer Launcher?
 
-- **Installer version**: VoxVer Launcher automatically detects new versions and prompts you to update. You can also manually download the latest version from [GitHub Releases](https://github.com/nnkmn/VoxVer-Launcher/releases) and install it over the existing installation.
+- **Installer version**: VoxVer Launcher automatically detects new versions and prompts you to update. You can also manually download the latest version from [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/releases) and install it over the existing installation.
 - **Portable version**: You need to manually download the new version and replace the files. It is recommended to keep the configuration files and only replace the program files.

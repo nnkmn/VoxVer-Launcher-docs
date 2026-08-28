@@ -483,5 +483,5 @@ VoxVer Launcher 的首个公开版本，包含以下核心功能：
 :::
 
 ::: tip 参与贡献
-如果你希望为 VoxVer Launcher 贡献代码或提出功能建议，欢迎前往 [GitHub](https://github.com/nnkmn/VoxVer-Launcher) 提交 Pull Request 或 Issue。
+如果你希望为 VoxVer Launcher 贡献代码或提出功能建议，欢迎前往 [GitHub](https://github.com/MeowY-Studios/VoxVer-Launcher) 提交 Pull Request 或 Issue。
 :::

@@ -73,5 +73,5 @@ VoxVer Launcher 启动器本身对硬件要求较低，但运行 Minecraft 游�
 如果你在使用 VoxVer Launcher 的过程中遇到任何问题，可以通过以下方式获取帮助：
 
 1. **查阅文档** -- 先浏览本指南中的 [常见问题](/guide/faq) 和 [崩溃监控](/guide/crash) 章节，大部分问题都能在这里找到答案。
-2. **搜索 Issues** -- 前往 [GitHub Issues](https://github.com/nnkmn/VoxVer-Launcher/issues) 搜索是否已有相同问题的讨论。
+2. **搜索 Issues** -- 前往 [GitHub Issues](https://github.com/MeowY-Studios/VoxVer-Launcher/issues) 搜索是否已有相同问题的讨论。
 3. **提交 Issue** -- 如果以上方式都无法解决你的问题，请在 GitHub 提交新的 Issue，并尽量附上崩溃日志和系统环境信息，以便开发者快速定位问题。

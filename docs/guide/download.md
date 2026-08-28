@@ -10,7 +10,7 @@ title: "下载与安装"
 
 VoxVer Launcher 的正式发布版本托管在 GitHub Releases 上。
 
-前往 [GitHub Releases](https://github.com/nnkmn/VoxVer-Launcher/releases) 页面，找到最新版本，下载对应的安装包。
+前往 [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/releases) 页面，找到最新版本，下载对应的安装包。
 
 | 文件名 | 说明 | 适用平台 |
 |--------|------|---------|
@@ -75,7 +75,7 @@ macOS 版本功能与 Windows 版本完全一致。自 v0.6.4 起支持 macOS AR
 
 ```bash
 # 克隆仓库
-git clone https://github.com/nnkmn/VoxVer-Launcher.git
+git clone https://github.com/MeowY-Studios/VoxVer-Launcher.git
 cd VoxVer-Launcher
 
 # 安装项目依赖

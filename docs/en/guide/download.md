@@ -10,7 +10,7 @@ This chapter describes how to download and install VoxVer Launcher, as well as b
 
 Official releases of VoxVer Launcher are hosted on GitHub Releases.
 
-Go to [GitHub Releases](https://github.com/nnkmn/VoxVer-Launcher/releases) to find the latest version and download the installer.
+Go to [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/releases) to find the latest version and download the installer.
 
 | File Name | Description | Platform |
 |-----------|-------------|----------|
@@ -75,7 +75,7 @@ Make sure you have the following installed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/nnkmn/VoxVer-Launcher.git
+git clone https://github.com/MeowY-Studios/VoxVer-Launcher.git
 cd VoxVer-Launcher
 
 # Install dependencies
