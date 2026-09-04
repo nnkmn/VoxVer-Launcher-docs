@@ -3,18 +3,18 @@ layout: home
 title: "VoxVer Launcher - Minecraft Launcher"
 hero:
   name: "VoxVer Launcher"
-  text: "Make launching Minecraft feel effortless"
-  tagline: "A modern Minecraft launcher for premium login, isolated instances, mod management, and seamless sharing."
+  text: "A Next-Gen Minecraft Launcher"
+  tagline: "A modern Minecraft launcher built with Electron + Vue 3 + TypeScript, supporting Chinese and English"
   image:
     src: /Alogo.png
     alt: VoxVer Launcher
   actions:
     - theme: brand
-      text: Quick start in 5 minutes
-      link: /en/guide/quick-start
-    - theme: alt
-      text: Browse the guide
+      text: Get Started
       link: /en/guide/
+    - theme: alt
+      text: GitHub
+      link: https://github.com/MeowY-Studios/VoxVer-Launcher
 
 features:
   - icon: "⚡"
@@ -53,14 +53,6 @@ features:
     title: Global Hotkeys
     details: Customizable global hotkeys for quick game launch and window toggle.
     link: /en/guide/settings
-  - icon: "🛡️"
-    title: Crash Monitor
-    details: Automatically capture crash logs and JVM errors so you can troubleshoot with useful context.
-    link: /en/guide/crash
-  - icon: "💾"
-    title: Backup & Migration
-    details: Back up, restore, and migrate instance data while keeping saves and configuration safe.
-    link: /en/guide/instances
 ---
 
 <div class="home-content">
@@ -107,3 +99,18 @@ This project is open source under the [MIT License](https://github.com/MeowY-Stu
 **nnkmn (EccenTri)** -- [GitHub](https://github.com/nnkmn)
 
 </div>
+
+<style>
+.home-content {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+}
+.home-content h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 40px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+</style>

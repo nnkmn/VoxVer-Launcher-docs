@@ -3,18 +3,18 @@ layout: home
 title: "VoxVer Launcher - Minecraft Launcher"
 hero:
   name: "VoxVer Launcher"
-  text: "把启动游戏变成一件简单的事"
-  tagline: "一个现代化的 Minecraft 启动器：正版登录、版本隔离、Mod 管理与实例分享，一站式完成。"
+  text: "新一代 Minecraft 启动器"
+  tagline: "一个现代化的 Minecraft 启动器，基于 Electron + Vue 3 + TypeScript 构建，支持简体中文和英文"
   image:
     src: /Alogo.png
     alt: VoxVer Launcher
   actions:
     - theme: brand
-      text: 5 分钟快速上手
-      link: /guide/quick-start
-    - theme: alt
-      text: 查看完整指南
+      text: 开始使用
       link: /guide/
+    - theme: alt
+      text: GitHub
+      link: https://github.com/MeowY-Studios/VoxVer-Launcher
 
 features:
   - icon: "⚡"
@@ -53,14 +53,6 @@ features:
     title: 全局快捷键
     details: 支持自定义全局快捷键，快速启动游戏、切换窗口，提升操作效率。
     link: /guide/settings
-  - icon: "🛡️"
-    title: 崩溃监控
-    details: 自动捕获崩溃日志与 JVM 错误，帮助你快速定位问题并提交有效报告。
-    link: /guide/crash
-  - icon: "💾"
-    title: 备份与迁移
-    details: 支持实例数据备份、恢复与迁移，让重要存档和配置更安心。
-    link: /guide/instances
 ---
 
 <div class="home-content">
@@ -107,3 +99,18 @@ features:
 **nnkmn (EccenTri)** -- [GitHub](https://github.com/nnkmn)
 
 </div>
+
+<style>
+.home-content {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+}
+.home-content h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 40px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+</style>
