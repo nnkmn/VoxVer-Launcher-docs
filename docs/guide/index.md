@@ -1,10 +1,15 @@
 ---
 title: "VoxVer Launcher 使用指南"
+description: "从下载、登录到安装版本与管理 Mod，快速掌握 VoxVer Launcher。"
 ---
 
 # VoxVer Launcher 使用指南
 
-欢迎使用 **VoxVer Launcher** 使用指南。本指南将帮助你从零开始，快速掌握 VoxVer Launcher 启动器的全部功能。
+欢迎使用 **VoxVer Launcher** 使用指南。本指南按“先启动、再管理、后排障”的路径组织内容，帮助你从零开始完成首次游戏启动。
+
+::: tip 推荐阅读顺序
+新用户建议依次阅读 [下载与安装](/guide/download) → [快速启动](/guide/quick-start) → [Java 设置](/guide/java)。之后可以按需深入账户、版本、Mod 和实例管理。
+:::
 
 ## 关于 VoxVer Launcher
 

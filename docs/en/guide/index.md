@@ -1,10 +1,15 @@
 ---
 title: "VoxVer Launcher User Guide"
+description: "Learn how to download, sign in, install versions, manage mods, and troubleshoot VoxVer Launcher."
 ---
 
 # VoxVer Launcher User Guide
 
-Welcome to the **VoxVer Launcher** User Guide. This guide will help you get started from scratch and quickly master all the features of VoxVer Launcher.
+Welcome to the **VoxVer Launcher** User Guide. The documentation follows a practical path: launch first, manage your setup next, and troubleshoot when needed.
+
+::: tip Recommended path
+New users should start with [Download & Install](/en/guide/download), continue to [Quick Start](/en/guide/quick-start), and then review [Java Settings](/en/guide/java). Explore the remaining sections as needed.
+:::
 
 ## About VoxVer Launcher
 
